@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import placeholder from '../img/teaser-2-placeholder.jpg';
+
 
 const VideoTeaser = styled.video`
 	position: absolute;
@@ -17,7 +19,7 @@ const VideoTeaser = styled.video`
 `;
 
 export default (props) => (
-	<VideoTeaser autoPlay loop muted>
+	<VideoTeaser poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" autoPlay loop muted webkit-playsinline playsinline>
 		<source
 			src={props.video}
 			type="video/mp4"/>
