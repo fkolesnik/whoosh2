@@ -14,7 +14,6 @@ const VideoTeaser = styled.video`
   z-index: -1;
   background-position: center;
   background-size: cover;
-
 `;
 
 export default (props) => (

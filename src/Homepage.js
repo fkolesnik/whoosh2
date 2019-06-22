@@ -1,8 +1,8 @@
 import React from 'react';
 import Product from './Product';
 
-import cin1 from './video/teaser-2-hd.mp4'
-import cover1 from './img/teaser-2-cover.jpg'
+import cin1 from './video/teaser-7-hd.mp4'
+import cover1 from './img/teaser-7-cover.jpg'
 //import cin2 from './video/teaser-1-hd.mov'
 //import cin3 from './video/teaser-3-hd.mp4'
 //import cin4 from './video/teaser-4-hd.mp4'

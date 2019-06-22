@@ -11,7 +11,7 @@ const ProductSnippet = styled.article`
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.25);
 	padding-bottom: 2rem;
 	@media screen and (min-width: 600px) {
 		padding-bottom: 5rem;
@@ -29,9 +29,9 @@ const ProductSnippetDescription = styled.div`
 	
 	h1 {
 		font-size: 2rem;
-		font-weight: 800;
+		font-weight: 600;
 	  text-shadow: 0 1px 1px rgba(0,0,0,.25);
-	  letter-spacing: .3px;
+	  letter-spacing: .5px;
 	  margin-bottom: 1.5rem;
 	  @media screen and (min-width: 600px) {
 	  	font-size: 2.5rem;
