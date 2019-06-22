@@ -1,6 +1,6 @@
 import React from 'react';
 import {HashRouter as Router, Route} from "react-router-dom";
-import Product from './Product'
+import ProductPage from './ProductPage'
 import Homepage from './Homepage'
 import GlobalStyle from './theme/globalStyle'
 import Header from "./components/Header";
@@ -11,7 +11,7 @@ export default () => {
 		<Router>
 			<GlobalStyle/>
 			<Header/>
-			<Route component={Product} path="/product"/>
+			<Route component={ProductPage} path="/product"/>
 			<Route component={Homepage} path="/" exact/>
 			<Footer/>
 		</Router>

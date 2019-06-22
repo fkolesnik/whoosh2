@@ -17,14 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build&&gh-pages -d build",
-    "postbuild": "react-snap"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "devDependencies": {
-    "react-snap": "^1.23.0"
   },
   "browserslist": {
     "production": [

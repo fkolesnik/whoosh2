@@ -37,7 +37,6 @@ const ProductSnippetDescription = styled.div`
 	  	font-size: 2.5rem;
 		}
 	}
-	
 `;
 
 
@@ -49,7 +48,7 @@ export default (props) => (
 				<Button to={props.slug}>Buy for ${props.price}</Button>
 			</div>
 		</ProductSnippetDescription>
-		<VideoTeaser video={props.video}/>
+		<VideoTeaser video={props.video} cover={props.cover}/>
 	</ProductSnippet>
 )
 
