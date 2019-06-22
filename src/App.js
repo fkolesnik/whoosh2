@@ -11,8 +11,8 @@ export default () => {
 		<Router>
 			<GlobalStyle/>
 			<Header/>
-			<Route component={ProductPage} path="/product"/>
-			<Route component={Homepage} path="/" exact/>
+			<Route path="/product/:slug" component={ProductPage}/>
+			<Route path="/" exact component={Homepage} />
 			<Footer/>
 		</Router>
 	);

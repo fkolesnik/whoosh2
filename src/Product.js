@@ -6,7 +6,7 @@ import Button from './components/Button'
 const ProductSnippet = styled.article`
 	width: 100%;
 	height: 100vh;
-	min-height: 550px;
+	min-height: 500px;
 	position: relative;
 	overflow: hidden;
 	display: flex;
@@ -45,7 +45,7 @@ export default (props) => (
 		<ProductSnippetDescription>
 			<div>
 				<h1>{props.title}</h1>
-				<Button to={props.slug}>Buy for ${props.price}</Button>
+				<Button to={`/product/${props.slug}`}>Buy for ${props.price}</Button>
 			</div>
 		</ProductSnippetDescription>
 		<VideoTeaser video={props.video} cover={props.cover}/>
