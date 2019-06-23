@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import ProductPage from './ProductPage'
 import Homepage from './Homepage'
 import GlobalStyle from './theme/globalStyle'
