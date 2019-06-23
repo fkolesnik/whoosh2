@@ -1,7 +1,7 @@
 {
   "name": "whoosh2",
   "version": "0.1.0",
-  "homepage": "https://fkolesnik.github.io/whoosh2/",
+  "homepage": "https://fkolesnik.gitlab.io/whoosh2",
   "private": false,
   "dependencies": {
     "gh-pages": "^2.0.1",
