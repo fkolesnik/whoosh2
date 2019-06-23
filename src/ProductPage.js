@@ -21,7 +21,7 @@ class ProductPage extends React.Component {
 				background: '#eee',
 				paddingTop: '30vh'
 			}}>
-				<h1>Product: {product && product.title} {console.log(this.props)}</h1>
+				<h1>Product: {product && product.title}</h1>
 			</div>
 		);
 	}
