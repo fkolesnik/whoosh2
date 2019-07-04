@@ -14,6 +14,21 @@ const VideoTeaser = styled.video`
   z-index: -1;
   background-position: center;
   background-size: cover;
+  
+  &::-webkit-media-controls {
+  	display: none !important;
+  	opacity: 0;
+  }
+  
+  &::-webkit-media-controls-start-playback-button {
+  	display: none !important;
+    -webkit-appearance: none;
+    opacity: 0;
+	}
+	
+	&::-webkit-media-controls-overlay-play-button {
+      display: none;
+    }
 `;
 
 export default (props) => (
