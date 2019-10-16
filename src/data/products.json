@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "title": "Red Coat",
+    "slug": "red-coat",
+    "price": 170,
+    "video": "../img/products/coat-test-1.mp4",
+    "poster": "../img/products/coat-test-1-poster.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Black Coat",
+    "slug": "black-coat",
+    "price": 175,
+    "video": "../img/products/coat-test-1.mp4",
+    "poster": "../img/products/coat-test-1-poster.jpg"
+  }
+]
