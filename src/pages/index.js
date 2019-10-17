@@ -1,33 +1,39 @@
 import React from "react"
-import {Link} from "gatsby"
-
+import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
-import Image from "../components/Image"
+import ProductItem from "../components/ProductItem"
 
+export default ({ data }) => {
+  return (
+    <Layout>
+      {data.allProductsJson.edges.map(({ node }) => (
+        <ProductItem key={node.id} product={node} />
+      ))}
+    </Layout>
+  )
+}
 
-const IndexPage = () => (
-	<Layout>
-		
-		<h1>Зимнее пальто</h1>
-		<p>
-			Согласие действует по достижении целей обработки или в случае утраты
-			необходимости в достижении этих целей, если иное не предусмотрено
-			федеральным законом.
-		</p>
-		<p>
-			Согласие предоставляется на совершение следующих действий (операций) с
-			указанными в настоящем согласии персональными данными: сбор,
-			систематизацию, накопление, хранение, уточнение (обновление, изменение),
-			использование, передачу (предоставление, доступ), блокирование, удаление,
-			уничтожение, осуществляемых как с использованием средств автоматизации
-			(автоматизированная обработка), так и без использования таких средств
-			(неавтоматизированная обработка).
-		</p>
-		<div style={{maxWidth: `300px`, marginBottom: `1.45rem`}}>
-			<Image imgName="coat-test-1-2.jpg"/>
-		</div>
-		<Link to="/about/">О нас</Link>
-	</Layout>
-)
-
-export default IndexPage
+export const query = graphql`
+  query {
+    allProductsJson {
+      edges {
+        node {
+          id
+          price
+          slug
+          title
+          autoPlay
+          hero {
+            publicURL
+          }
+          video {
+            publicURL
+          }
+          poster {
+            publicURL
+          }
+        }
+      }
+    }
+  }
+`

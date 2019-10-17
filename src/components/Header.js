@@ -12,13 +12,15 @@ const Header = styled.header`
   width: 100%;
   height: 80px;
   max-width: var(--global-width);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   color: #f3f3f3;
+  @media only screen and (max-width: 600px) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 `
 
 const LogoLink = styled(Link)`
