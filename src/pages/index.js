@@ -66,14 +66,7 @@ export const query = graphql`
                 srcSetBreakpoints: [600, 1800]
                 quality: 90
               ) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          }
-          images {
-            childImageSharp {
-              fluid(maxWidth: 600, srcSetBreakpoints: [600], quality: 90) {
-                ...GatsbyImageSharpFluid_withWebp
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }

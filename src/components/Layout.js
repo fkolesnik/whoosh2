@@ -3,11 +3,17 @@ import Header from "./Header"
 import Footer from "./Footer"
 import "normalize.css"
 import "../styles/global.css"
+import styled from "styled-components"
 
 export default ({ children }) => (
-  <div style={{ padding: ".25rem" }}>
+  <Wrap>
     <Header />
     <main>{children}</main>
     <Footer />
-  </div>
+  </Wrap>
 )
+
+const Wrap = styled.div`
+  padding: 0.25rem;
+  min-height: 100vh;
+`
