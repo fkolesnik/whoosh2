@@ -5,9 +5,9 @@ import "normalize.css"
 import "../styles/global.css"
 
 export default ({ children }) => (
-  <>
+  <div style={{ padding: ".25rem" }}>
     <Header />
     <main>{children}</main>
     <Footer />
-  </>
+  </div>
 )

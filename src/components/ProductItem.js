@@ -1,56 +1,57 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import VideoBackground from "./VideoBackground"
-import Button from "./Button"
+import ProductItemBackground from "./ProductItemBackground"
+import Colors from "./Colors"
 import { Col, Row } from "../styles/Grid"
 
-export default ({ product }) => {
-  const { title, slug, price, hero } = product
-  const autoPlay = JSON.parse(product.autoPlay)
+export default props => {
+  const { title, slug, price } = props.product
 
-  console.log(product.hero)
   return (
-    <Wrap autoPlay>
+    <Wrap>
       <Row>
-        <Col span={2}/>
-        <Col span={1}>
+        <Col span={4} />
+        <Col span={4}>
           <h2>
-            <Link to={slug}>{title}</Link>
+            <Link to={slug}>
+              <div dangerouslySetInnerHTML={{ __html: title }} />
+              <small>{price}₽</small>
+            </Link>
           </h2>
-          <Button>Купить за {price}₽</Button>
+          <Colors
+            onColorChange={props.onColorChange}
+            products={props.products.filter(
+              ({ node }) => node.family === props.product.family
+            )}
+          />
         </Col>
       </Row>
-
-      {autoPlay ? (
-        <VideoBackground product={product} />
-      ) : (
-        <div
-          style={{
-            position: "absolute",
-            zIndex: -10,
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            background: `url(${hero.publicURL}) no-repeat center top / cover`,
-          }}
-        />
-      )}
+      <ProductItemBackground product={props.product} />
     </Wrap>
   )
 }
 
 const Wrap = styled.article`
+  overflow: hidden;
+  margin-bottom: 0.25rem;
   position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: flex-end;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.15);
   padding: 1rem 1rem 4rem 1rem;
-  a {
-    color: white;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  h2 {
+    margin-bottom: 0.7rem;
+    a {
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+      color: white;
+      small {
+        color: #0d5df2;
+        text-shadow: none;
+      }
+    }
   }
 `

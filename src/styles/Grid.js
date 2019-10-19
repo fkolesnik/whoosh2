@@ -15,6 +15,8 @@ export const Col = styled.div`
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: ${props => props.gap && ".5rem"};
+  padding-right: ${props => props.gap && ".5rem"};
   @media screen and (min-width: 600px) {
     flex: ${props => (props.span ? props.span : 1)};
     justify-content: ${props => (props.y ? props.y : "flex-start")};
