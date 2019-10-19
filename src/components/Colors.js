@@ -30,8 +30,4 @@ const Color = styled(Link)`
   border-radius: 50%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   background-color: ${props => props.color};
-  transition: border 0.2s;
-  &:hover {
-    border: 3px solid white;
-  }
 `
