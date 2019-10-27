@@ -6,7 +6,7 @@ import CartIcon from "./CartIcon"
 
 export default props => (
   <Header as="header">
-    <Logo isHomepage={props.isHomepage} />
+    <Logo />
     <CartIcon />
   </Header>
 )

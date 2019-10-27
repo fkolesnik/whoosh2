@@ -1,20 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { Consumer } from "../context"
 
 export default props => {
+  const { family, hover } = props
+  console.log("hover", hover)
   return (
-    <Wrap>
-      {props.products.map(({ node }) => (
-        <Color
-          onMouseEnter={() => props.onColorChange(node.family, node.id)}
-          key={node.id}
-          to={node.slug}
-          color={node.color}
-          selected={node.isFamilyHead}
-        />
-      ))}
-    </Wrap>
+    <Consumer>
+      {value => {
+        return (
+          <Wrap>
+            {value.products
+              .filter(({ node }) => node.family === family)
+              .map(({ node }) => (
+                <Color
+                  key={node.id}
+                  to={`/${node.slug}`}
+                  color={node.color}
+                  selected={node.isFamilyHead}
+                  onMouseEnter={() => value.onColorChange(node.family, node.id)}
+                />
+              ))}
+          </Wrap>
+        )
+      }}
+    </Consumer>
   )
 }
 

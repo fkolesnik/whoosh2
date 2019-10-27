@@ -1,30 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import ProductItemBackground from "./ProductItemBackground"
-import Colors from "./Colors"
+import ProductItemTitle from "./ProductItemTitle"
+import { Container } from "../styles/Container"
 import { Col, Row } from "../styles/Grid"
+import Colors from "./Colors"
 
 export default props => {
-  const { title, slug, price } = props.product
-
   return (
-    <Wrap>
+    <Wrap as="article">
       <Row>
         <Col span={4} />
         <Col span={4}>
-          <h2>
-            <Link to={slug}>
-              <div dangerouslySetInnerHTML={{ __html: title }} />
-              <small>{price}₽</small>
-            </Link>
-          </h2>
-          <Colors
-            onColorChange={props.onColorChange}
-            products={props.products.filter(
-              ({ node }) => node.family === props.product.family
-            )}
-          />
+          <ProductItemTitle product={props.product} />
+          <Colors family={props.product.family} />
         </Col>
       </Row>
       <ProductItemBackground product={props.product} />
@@ -32,17 +21,15 @@ export default props => {
   )
 }
 
-const Wrap = styled.article`
-  overflow: hidden;
+const Wrap = styled(Container)`
   margin-bottom: 0.25rem;
   position: relative;
-  width: 100%;
   height: 100vh;
+  min-height: 500px;
   display: flex;
   align-items: flex-end;
-  background-color: rgba(0, 0, 0, 0.15);
-  padding: 1rem 1rem 4rem 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-bottom: 4rem;
   h2 {
     margin-bottom: 0.7rem;
     a {

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
 
-export default ({product}) => {
+export default ({ product }) => {
   return (
     <Wrap>
       <Img

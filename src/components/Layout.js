@@ -4,16 +4,26 @@ import Footer from "./Footer"
 import "normalize.css"
 import "../styles/global.css"
 import styled from "styled-components"
+import { Consumer } from "../context"
+import LoadProducts from "./LoadProducts"
 
-export default ({ children }) => (
-  <Wrap>
-    <Header />
-    <main>{children}</main>
-    <Footer />
-  </Wrap>
+export default props => (
+  <Consumer>
+    {value => {
+      return (
+        <Wrap>
+          <LoadProducts loadProducts={value.loadProducts} />
+          <Header />
+          <main>{props.children}</main>
+          <Footer />
+        </Wrap>
+      )
+    }}
+  </Consumer>
 )
 
 const Wrap = styled.div`
-  padding: 0.25rem;
   min-height: 100vh;
+  padding: 0.25rem;
+  overflow: hidden;
 `
