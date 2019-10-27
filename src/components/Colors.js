@@ -5,7 +5,6 @@ import { Consumer } from "../context"
 
 export default props => {
   const { family, hover } = props
-  console.log("hover", hover)
   return (
     <Consumer>
       {value => {
