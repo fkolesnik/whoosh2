@@ -1,19 +1,25 @@
 import React from "react"
 import styled from "styled-components"
 import ProductItemBackground from "./ProductItemBackground"
-import ProductItemTitle from "./ProductItemTitle"
 import { Container } from "../styles/Container"
 import { Col, Row } from "../styles/Grid"
 import Colors from "./Colors"
+import { Link } from "gatsby"
 
 export default props => {
+  const { slug, title, price, family } = props.product
   return (
     <Wrap as="article">
       <Row>
         <Col span={4} />
         <Col span={4}>
-          <ProductItemTitle product={props.product} />
-          <Colors family={props.product.family} />
+          <h2>
+            <Link to={`/${slug}`}>
+              <div dangerouslySetInnerHTML={{ __html: title }} />
+              <small>{price}₽</small>
+            </Link>
+          </h2>
+          <Colors family={family} hover />
         </Col>
       </Row>
       <ProductItemBackground product={props.product} />

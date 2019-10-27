@@ -1,10 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/Layout"
 import ProductImages from "../components/ProductImages"
 import Button from "../components/Button"
-import ProductItemTitle from "../components/ProductItemTitle"
 import Colors from "../components/Colors"
 
 export default props => {
@@ -16,7 +15,10 @@ export default props => {
           <ProductImages images={product.images} />
         </ImagesCol>
         <TextCol>
-          <ProductItemTitle product={product} />
+          <h2>
+            <div dangerouslySetInnerHTML={{ __html: product.title }} />
+            <small>{product.price}₽</small>
+          </h2>
           <Colors family={product.family} />
           <p dangerouslySetInnerHTML={{ __html: product.description }} />
           <Button>Купить</Button>
@@ -51,6 +53,10 @@ const TextCol = styled.div`
     padding-left: 2rem;
     position: sticky;
     top: 0;
+  }
+  small {
+    color: #0d5df2;
+    text-shadow: none;
   }
 `
 
