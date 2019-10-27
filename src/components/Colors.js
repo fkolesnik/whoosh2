@@ -18,7 +18,12 @@ export default props => {
                   to={`/${node.slug}`}
                   color={node.color}
                   selected={node.isFamilyHead}
-                  onMouseEnter={() => value.onColorChange(node.family, node.id)}
+                  onMouseEnter={
+                    hover
+                      ? () => value.onColorChange(node.family, node.id)
+                      : null
+                  }
+                  onClick={() => value.onColorChange(node.family, node.id)}
                 />
               ))}
           </Wrap>
@@ -38,6 +43,6 @@ const Color = styled(Link)`
   margin-right: 0.5rem;
   border: 3px solid ${props => (props.selected ? "white" : "none")};
   border-radius: 50%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   background-color: ${props => props.color};
 `
