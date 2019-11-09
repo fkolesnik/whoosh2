@@ -13,8 +13,8 @@ export default Checkout
 
 const Wrap = styled.div`
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 96vw;
+  height: 96vh;
   top: 0;
   right: 0;
   bottom: 0;
@@ -25,7 +25,7 @@ const Wrap = styled.div`
   text-align: center;
   transform: translateY(-100%);
   will-change: transform;
-  animation: 0.5s slideIn ease-in-out both;
+  animation: 0.25s slideIn ease-in-out both;
 
   @keyframes slideIn {
     100% {

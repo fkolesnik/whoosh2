@@ -47,7 +47,4 @@ const mapDispatchToProps = dispatch => ({
   loadProducts: products => dispatch(loadProducts(products)),
 })
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(LoadProducts)
+export default connect(null, mapDispatchToProps)(LoadProducts)

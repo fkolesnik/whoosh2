@@ -24,10 +24,7 @@ const mapDispatchToProps = dispatch => ({
   toggle: () => dispatch(toggleCart()),
 })
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(CartIcon)
+export default connect(mapStateToProps, mapDispatchToProps)(CartIcon)
 
 const Wrap = styled.button`
   position: relative;
