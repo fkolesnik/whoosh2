@@ -8,11 +8,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [`rubik\:400,700`],
-        display: "swap",
-      },
+        google: {
+          families: ['Rubik:400,700:cyrillic&display=swap']
+        }
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,

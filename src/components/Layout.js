@@ -25,5 +25,4 @@ export default props => (
 const Wrap = styled.div`
   min-height: 100vh;
   padding: 0.25rem;
-  overflow: hidden;
 `

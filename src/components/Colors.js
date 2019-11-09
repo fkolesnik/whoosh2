@@ -35,11 +35,12 @@ export default props => {
 
 const Wrap = styled.div`
   display: flex;
+    margin-bottom: 2rem;
 `
 
 const Color = styled(Link)`
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   margin-right: 0.5rem;
   border: 3px solid ${props => (props.selected ? "white" : "none")};
   border-radius: 50%;
