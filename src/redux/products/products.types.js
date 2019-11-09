@@ -1,3 +1,4 @@
 export const productsTypes = {
   LOAD_PRODUCTS: "LOAD_PRODUCTS",
+  CHANGE_FAMILY_HEAD: "CHANGE_FAMILY_HEAD",
 }

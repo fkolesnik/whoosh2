@@ -3,7 +3,7 @@ import styled from "styled-components"
 import ProductItemBackground from "./ProductItemBackground"
 import { Container } from "../styles/Container"
 import { Col, Row } from "../styles/Grid"
-//import Colors from "./Colors"
+import Colors from "./Colors"
 import { Link } from "gatsby"
 
 export default props => {
@@ -19,7 +19,7 @@ export default props => {
               <small>{price}₽</small>
             </Link>
           </h2>
-          {/*<Colors family={family} hover />*/}
+          <Colors family={family} hover />
         </Col>
       </Row>
       <ProductItemBackground product={props.product} />

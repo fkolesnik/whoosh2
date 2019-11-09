@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Layout from "../components/Layout"
 import ProductMedia from "../components/ProductMedia"
 import Button from "../components/Button"
-//import Colors from "../components/Colors"
+import Colors from "../components/Colors"
 import Sizes from "../components/Sizes"
 
 export default props => {
@@ -19,7 +19,7 @@ export default props => {
               <div dangerouslySetInnerHTML={{ __html: product.title }} />
               <small>{product.price}₽</small>
             </h1>
-            {/*<Colors family={product.family} />*/}
+            <Colors family={product.family} />
             <Sizes sizes={product.sizes} />
             <Button>Купить</Button>
             <p dangerouslySetInnerHTML={{ __html: product.description }} />

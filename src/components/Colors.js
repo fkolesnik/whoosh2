@@ -1,37 +1,38 @@
 import React from "react"
-import { Link } from "gatsby"
+import {Link} from "gatsby"
 import styled from "styled-components"
-import { Consumer } from "../context"
+import {changeFamilyHead} from "../redux/products/products.actions"
+import {connect} from "react-redux"
+//import {createStructuredSelector} from "reselect";
+//import {selectLoadProductsForHomepage} from "../redux/products/products.selectors";
 
-export default props => {
-  const { family, hover } = props
-  return (
-    <Consumer>
-      {value => {
-        return (
-          <Wrap>
-            {value.products
-              .filter(({ node }) => node.family === family)
-              .map(({ node }) => (
-                <Color
-                  key={node.id}
-                  to={`/${node.slug}`}
-                  color={node.color}
-                  selected={node.isFamilyHead}
-                  onMouseEnter={
-                    hover
-                      ? () => value.onColorChange(node.family, node.id)
-                      : null
-                  }
-                  onClick={() => value.onColorChange(node.family, node.id)}
-                />
-              ))}
-          </Wrap>
-        )
-      }}
-    </Consumer>
-  )
-}
+const Colors = ({products, family, hover, dispatch}) => (
+	<Wrap>
+		{products
+			.filter(({node}) => node.family === family)
+			.map(({node}) => (
+				<Color
+					key={node.id}
+					to={`/${node.slug}`}
+					color={node.color}
+					selected={node.isFamilyHead}
+					onMouseEnter={
+						hover ? () => dispatch(changeFamilyHead(node.family, node.id)) : null
+					}
+					onClick={() => dispatch(changeFamilyHead(node.family, node.id))}
+				/>
+			))}
+	
+	</Wrap>
+)
+
+const mapStateToProps = state => ({
+	products: state.products.items,
+})
+
+export default connect(
+	mapStateToProps,
+)(Colors)
 
 const Wrap = styled.div`
   display: flex;
