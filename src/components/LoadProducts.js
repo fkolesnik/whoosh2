@@ -1,15 +1,9 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
+import { connect } from "react-redux"
+import { loadProducts } from "../redux/products/products.actions"
 
 const LoadProducts = ({ loadProducts }) => {
-  const [products, setProducts] = React.useState([])
-
-  React.useEffect(() => {
-    if (products.length > 0) {
-      loadProducts(products)
-    }
-  }, [products, loadProducts])
-
   return (
     <StaticQuery
       query={graphql`
@@ -42,11 +36,18 @@ const LoadProducts = ({ loadProducts }) => {
         }
       `}
       render={data => {
-        setProducts(data.allProductsJson.edges)
+        loadProducts(data.allProductsJson.edges)
         return <React.Fragment />
       }}
     />
   )
 }
 
-export default LoadProducts
+const mapDispatchToProps = dispatch => ({
+  loadProducts: products => dispatch(loadProducts(products)),
+})
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(LoadProducts)

@@ -1,26 +1,26 @@
 import React from "react"
-import Header from "./Header"
-import Footer from "./Footer"
 import "normalize.css"
 import "../styles/global.css"
 import styled from "styled-components"
-import { Consumer } from "../context"
-import LoadProducts from "./LoadProducts"
+import { PersistGate } from "redux-persist/integration/react"
+import { persistor } from "../redux/store"
 
-export default props => (
-  <Consumer>
-    {value => {
-      return (
-        <Wrap>
-          <LoadProducts loadProducts={value.loadProducts} />
-          <Header />
-          <main>{props.children}</main>
-          <Footer />
-        </Wrap>
-      )
-    }}
-  </Consumer>
+import LoadProducts from "./LoadProducts"
+import Header from "./Header"
+import Footer from "./Footer"
+
+const Layout = props => (
+  <Wrap>
+    <PersistGate loading={null} persistor={persistor}>
+      <LoadProducts />
+      <Header />
+      <main>{props.children}</main>
+      <Footer />
+    </PersistGate>
+  </Wrap>
 )
+
+export default Layout
 
 const Wrap = styled.div`
   min-height: 100vh;

@@ -1,19 +1,31 @@
 import React from "react"
+import { connect } from "react-redux"
 import styled from "styled-components"
+import { createStructuredSelector } from "reselect"
+import { selectCartHidden } from "../redux/cart/cart.selectors"
+
 import { Container } from "../styles/Container"
 import Logo from "./Logo"
 import CartIcon from "./CartIcon"
+import Checkout from "./Checkout"
 
-export default props => (
-  <Header as="header">
+const Header = ({ hidden }) => (
+  <Wrap as="header">
     <Logo />
     <CartIcon />
-  </Header>
+    {!hidden && <Checkout />}
+  </Wrap>
 )
 
-const Header = styled(Container)`
+const mapStateToProps = createStructuredSelector({
+  hidden: selectCartHidden,
+})
+
+export default connect(mapStateToProps)(Header)
+
+const Wrap = styled(Container)`
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;

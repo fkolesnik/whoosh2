@@ -8,12 +8,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Rubik:400,700:cyrillic&display=swap']
-        }
-      }
+          families: ["Rubik:400,700:cyrillic&display=swap"],
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,11 +33,8 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/img/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/img/favicon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

@@ -35,7 +35,7 @@ export default props => {
 
 const Wrap = styled.div`
   display: flex;
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 `
 
 const Color = styled(Link)`
