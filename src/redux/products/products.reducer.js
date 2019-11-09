@@ -15,11 +15,7 @@ const productsReducer = (state = INITIAL_STATE, action) => {
     case productsTypes.CHANGE_FAMILY_HEAD:
       return {
         ...state,
-        items: changeFamilyHead(
-          state.items,
-          action.family,
-          action.id
-        ),
+        items: changeFamilyHead(state.items, action.family, action.id),
       }
     default:
       return state
