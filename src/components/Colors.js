@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { changeFamilyHead } from "../redux/products/products.actions"
 import { connect } from "react-redux"
-//import {createStructuredSelector} from "reselect";
-//import {selectLoadProductsForHomepage} from "../redux/products/products.selectors";
+import { createStructuredSelector } from "reselect"
+import { selectLoadProducts } from "../redux/products/products.selectors"
 
 const Colors = ({ products, family, hover, dispatch }) => (
   <Wrap>
@@ -27,8 +27,8 @@ const Colors = ({ products, family, hover, dispatch }) => (
   </Wrap>
 )
 
-const mapStateToProps = state => ({
-  products: state.products.items,
+const mapStateToProps = createStructuredSelector({
+  products: selectLoadProducts,
 })
 
 export default connect(mapStateToProps)(Colors)

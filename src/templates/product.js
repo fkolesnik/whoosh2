@@ -1,14 +1,15 @@
 import React from "react"
+import { connect } from "react-redux"
+import { addItem, toggleCart } from "../redux/cart/cart.actions"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/Layout"
 import ProductMedia from "../components/ProductMedia"
-import Button from "../components/Button"
 import Colors from "../components/Colors"
 import Sizes from "../components/Sizes"
 
-export default props => {
-  const product = props.data.productsJson
+const ProductPage = ({ data, addItem, toggleCart }) => {
+  const product = data.productsJson
   return (
     <Layout>
       <Wrap>
@@ -21,7 +22,14 @@ export default props => {
             </h1>
             <Colors family={product.family} />
             <Sizes sizes={product.sizes} />
-            <Button>Купить</Button>
+            <button
+              onClick={() => {
+                addItem(product)
+                toggleCart()
+              }}
+            >
+              Купить
+            </button>
             <p dangerouslySetInnerHTML={{ __html: product.description }} />
           </div>
         </TextCol>
@@ -29,6 +37,13 @@ export default props => {
     </Layout>
   )
 }
+
+const mapDispatchToProps = dispatch => ({
+  addItem: item => dispatch(addItem(item)),
+  toggleCart: () => dispatch(toggleCart()),
+})
+
+export default connect(null, mapDispatchToProps)(ProductPage)
 
 const Wrap = styled.div`
   display: grid;

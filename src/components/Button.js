@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
-export default props => <Button to={props.to}>{props.children}</Button>
+export default props => <Wrap to={props.to}>{props.children}</Wrap>
 
-const Button = styled.button`
+const Wrap = styled.button`
   display: block;
   width: 100%;
   padding: 0.75rem 1.5rem;

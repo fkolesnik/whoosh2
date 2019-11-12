@@ -3,21 +3,26 @@ import { connect } from "react-redux"
 import { toggleCart } from "../redux/cart/cart.actions"
 import styled from "styled-components"
 import { createStructuredSelector } from "reselect"
-import { selectCartHidden } from "../redux/cart/cart.selectors"
+import {
+  selectCartHidden,
+  selectCartItemsCount,
+} from "../redux/cart/cart.selectors"
 
 import cart from "../img/icon-hanger.svg"
 import close from "../img/icon-close.svg"
 
-const CartIcon = ({ toggle, hidden }) => {
+const CartIcon = ({ toggle, hidden, count }) => {
   return (
     <Wrap onClick={toggle}>
       <img src={hidden ? cart : close} width={22} alt="" />
+      {count > 0 && <Count>{count}</Count>}
     </Wrap>
   )
 }
 
 const mapStateToProps = createStructuredSelector({
   hidden: selectCartHidden,
+  count: selectCartItemsCount,
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -41,9 +46,31 @@ const Wrap = styled.button`
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   outline: none;
-  opacity: 0.5;
-  transition: opacity 0.3s;
-  &:hover {
-    opacity: 1;
+  img {
+    opacity: 0.25;
+    transition: opacity 0.3s;
   }
+  &:hover {
+    img {
+      opacity: 1;
+    }
+  }
+`
+
+const Count = styled.div`
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  min-width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 0 6px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  background-color: #0d5df2;
+  border-radius: 10px;
 `
