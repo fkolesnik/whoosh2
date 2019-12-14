@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "whoosh",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Whoosh Store made with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.7",
