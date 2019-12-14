@@ -1,20 +1,22 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
-import { changeFamilyHead } from "../redux/products/products.actions"
-import { connect } from "react-redux"
-import { createStructuredSelector } from "reselect"
-import { selectLoadProducts } from "../redux/products/products.selectors"
+import React from 'react'
+import { Link } from 'gatsby'
+import { changeFamilyHead } from '../redux/products/products.actions'
+import { connect } from 'react-redux'
+import { createStructuredSelector } from 'reselect'
+import { selectLoadProducts } from '../redux/products/products.selectors'
+import { Box, LabelCircle } from '../styles/Styles'
 
 const Colors = ({ products, family, hover, dispatch }) => (
-  <Wrap>
+  <Box display="flex" mb={3}>
     {products
       .filter(({ node }) => node.family === family)
       .map(({ node }) => (
-        <Color
+        <LabelCircle
+          as={Link}
+          mr={2}
           key={node.id}
           to={`/${node.slug}`}
-          color={node.color}
+          bg={node.color}
           selected={node.isFamilyHead}
           onMouseEnter={
             hover
@@ -24,7 +26,7 @@ const Colors = ({ products, family, hover, dispatch }) => (
           onClick={() => dispatch(changeFamilyHead(node.family, node.id))}
         />
       ))}
-  </Wrap>
+  </Box>
 )
 
 const mapStateToProps = createStructuredSelector({
@@ -32,18 +34,3 @@ const mapStateToProps = createStructuredSelector({
 })
 
 export default connect(mapStateToProps)(Colors)
-
-const Wrap = styled.div`
-  display: flex;
-  margin-bottom: 1rem;
-`
-
-const Color = styled(Link)`
-  width: 40px;
-  height: 40px;
-  margin-right: 0.5rem;
-  border: 3px solid ${props => (props.selected ? "white" : "none")};
-  border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background-color: ${props => props.color};
-`

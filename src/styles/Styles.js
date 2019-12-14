@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 import {
   background,
   border,
@@ -9,8 +9,8 @@ import {
   shadow,
   space,
   typography,
-} from "styled-system"
-import theme from "./theme"
+} from 'styled-system'
+import theme from './theme'
 
 const titleExtra = [space, layout, color, typography, shadow]
 const boxExtra = [
@@ -53,7 +53,7 @@ export const T2 = styled.h2`
 `
 
 export const Button = styled.button`
-  background-color: ${theme.color.primary};
+  background-color: ${props => (props.error ? 'red' : theme.color.primary)};
   color: white;
   padding: 0.64rem 1.5rem;
   border-radius: 50px;
@@ -72,9 +72,10 @@ export const Button = styled.button`
 export const LabelCircle = styled.div`
   width: 40px;
   height: 40px;
-  border: 3px solid
-    ${props => (props.selected ? `${theme.color.primary}` : "#ddd")};
+  background-color: #eee;
+  box-shadow: ${theme.shadow};
   border-radius: 50%;
+  cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.8rem;
@@ -82,19 +83,14 @@ export const LabelCircle = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${props =>
-    props.error ? "zzz 0.82s cubic-bezier(.36,.07,.19,.97)" : "none"};
+    props.error ? 'zzz 0.82s cubic-bezier(.36,.07,.19,.97)' : 'none'};
   outline: none;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-  transition: border 0.2s, border-color 0.3s;
-  &:hover {
-    border-color: #ccc;
-  }
-  &:focus,
-  &:active {
-    border-color: ${theme.color.primary};
-  }
+  transition: border 0.15s;
+  will-change: border;
+  border: 3px solid ${props => (props.selected ? 'white' : 'transparent')};
   @keyframes zzz {
     10%,
     90% {

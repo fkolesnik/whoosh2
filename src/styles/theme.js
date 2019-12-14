@@ -1,20 +1,21 @@
 const theme = {
   color: {
-    primary: "#0d5df2",
-    light: "#fafafa",
+    primary: '#0d5df2',
+    light: '#fafafa',
   },
-  breakpoints: ["769px", "1600px"],
-  space: [0, ".25rem", "0.5rem", "1rem", "2rem", "3rem", "5rem"],
-  fontSizes: [0, ".85rem", "1rem", "1.25rem", "1.6rem", "2.25rem", "3rem"],
+  breakpoints: ['769px', '1600px'],
+  space: [0, '.25rem', '0.5rem', '1rem', '2rem', '3rem', '5rem'],
+  fontSizes: [0, '.85rem', '1rem', '1.25rem', '1.6rem', '2.25rem', '3rem'],
   fontFamily: {
     base:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Helvetica Neue", sans-serif',
-    title: "Rubik, sans-serif;",
+    title: 'Rubik, sans-serif;',
   },
   lineHeight: {
     base: 1.5,
     title: 1.2,
   },
+  shadow: `0 1px 2px rgba(0, 0, 0, 0.25)`,
 }
 
 // spaces aliases

@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import { connect } from "react-redux"
-import { loadProducts } from "../redux/products/products.actions"
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import { connect } from 'react-redux'
+import { loadProducts } from '../redux/products/products.actions'
 
 const LoadProducts = ({ loadProducts }) => {
   return (

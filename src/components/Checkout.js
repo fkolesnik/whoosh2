@@ -1,19 +1,19 @@
-import React from "react"
-import { connect } from "react-redux"
-import styled from "styled-components"
-import { createStructuredSelector } from "reselect"
-import { selectCartItems, selectCartTotal } from "../redux/cart/cart.selectors"
-import { addItem, removeItem } from "../redux/cart/cart.actions"
-import { LabelCircle } from "../styles/Styles"
+import React from 'react'
+import { connect } from 'react-redux'
+import styled from 'styled-components'
+import { createStructuredSelector } from 'reselect'
+import { selectCartItems, selectCartTotal } from '../redux/cart/cart.selectors'
+import { addItem, removeItem } from '../redux/cart/cart.actions'
+import { LabelCircle } from '../styles/Styles'
 
 const Checkout = ({ cartItems, total, dispatch }) => (
   <Wrap>
     <h1>
-      Заказ{" "}
+      Заказ{' '}
       {total > 0 && (
         <>
-          на{" "}
-          <span style={{ color: "#0d5df2" }}>
+          на{' '}
+          <span style={{ color: '#0d5df2' }}>
             {total}
             <small>₽</small>
           </span>

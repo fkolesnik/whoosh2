@@ -1,11 +1,11 @@
-import React from "react"
-import { connect } from "react-redux"
-import { createStructuredSelector } from "reselect"
-import { selectCartHidden } from "../redux/cart/cart.selectors"
-import Logo from "./Logo"
-import CartIcon from "./CartIcon"
-import Checkout from "./Checkout"
-import { Box } from "../styles/Styles"
+import React from 'react'
+import { connect } from 'react-redux'
+import { createStructuredSelector } from 'reselect'
+import { selectCartHidden } from '../redux/cart/cart.selectors'
+import Logo from './Logo'
+import CartIcon from './CartIcon'
+import Checkout from './Checkout'
+import { Box } from '../styles/Styles'
 
 const Header = ({ hidden }) => (
   <Box

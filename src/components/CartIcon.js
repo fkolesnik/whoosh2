@@ -1,15 +1,16 @@
-import React from "react"
-import { connect } from "react-redux"
-import { toggleCart } from "../redux/cart/cart.actions"
-import styled from "styled-components"
-import { createStructuredSelector } from "reselect"
+import React from 'react'
+import { connect } from 'react-redux'
+import { toggleCart } from '../redux/cart/cart.actions'
+import styled from 'styled-components'
+import { createStructuredSelector } from 'reselect'
+import theme from '../styles/theme'
 import {
   selectCartHidden,
   selectCartItemsCount,
-} from "../redux/cart/cart.selectors"
+} from '../redux/cart/cart.selectors'
 
-import cart from "../img/icon-hanger.svg"
-import close from "../img/icon-close.svg"
+import cart from '../img/icon-hanger.svg'
+import close from '../img/icon-close.svg'
 
 const CartIcon = ({ toggle, hidden, count }) => {
   return (
@@ -43,7 +44,7 @@ const Wrap = styled.button`
   background-color: white;
   border-radius: 50%;
   border: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: ${theme.shadow};
   cursor: pointer;
   outline: none;
   img {

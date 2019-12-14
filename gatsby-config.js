@@ -7,10 +7,10 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ["Rubik:400,700:cyrillic&display=swap"],
+          families: ['Rubik:400,700:cyrillic&display=swap'],
         },
       },
     },

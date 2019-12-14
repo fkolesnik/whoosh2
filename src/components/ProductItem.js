@@ -1,17 +1,17 @@
-import React from "react"
-import ProductItemBackground from "./ProductItemBackground"
-import Colors from "./Colors"
-import { Link } from "gatsby"
-import theme from "../styles/theme"
-import { Box, T1 } from "../styles/Styles"
+import React from 'react'
+import ProductItemBackground from './ProductItemBackground'
+import Colors from './Colors'
+import { Link } from 'gatsby'
+import theme from '../styles/theme'
+import { Box, T1 } from '../styles/Styles'
 
 export default props => {
   const { slug, title, price, family } = props.product
   return (
     <Box
       as="article"
-      p={"n"}
-      mb={"xs"}
+      p={'n'}
+      mb={'xs'}
       height="100vh"
       minHeight={500}
       position="relative"

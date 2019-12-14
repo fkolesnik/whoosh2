@@ -16,11 +16,15 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
 
 export const removeItemFromCart = (cartItems, cartItemToRemove) => {
   const existingCartItem = cartItems.find(
-    item => item.id === cartItemToRemove.id && item.size === cartItemToRemove.size
+    item =>
+      item.id === cartItemToRemove.id && item.size === cartItemToRemove.size
   )
 
   if (existingCartItem.quantity === 1) {
-    return cartItems.filter(item => item.id !== cartItemToRemove.id || item.size !== cartItemToRemove.size)
+    return cartItems.filter(
+      item =>
+        item.id !== cartItemToRemove.id || item.size !== cartItemToRemove.size
+    )
   }
 
   return cartItems.map(item =>
