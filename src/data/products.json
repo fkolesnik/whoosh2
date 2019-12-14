@@ -2,7 +2,7 @@
   {
     "id": "11",
     "title": "Бежевый плащ с&nbsp;капюшоном",
-    "description": "Классическая парка входит в основу зимней коллекции SHU и выпускается в своей улучшенной версии каждый сезон, начиная с 2013 года. Работая над дизайном и технологичностью, мы получили универсальную верхнюю одежду для активной городской жизни. <br/><br/>Парка сделана из высокотехнологичного утеплителя DuPont Sorona, рассчитанного до -20°/-25°C, в зависимости от личной термостойкости человека. В дизайне мы использовали декоративные ленты, геометрия которых стала узнаваемым и фирменным элементом SHU. <br/><br/>Параметры модели: рост — 180 см., размер куртки — L. На съемке использованы джинсы из летней коллекции SHU.",
+    "description": "<p>Классическая парка входит в основу зимней коллекции SHU и выпускается в своей улучшенной версии каждый сезон, начиная с 2013 года. Работая над дизайном и технологичностью, мы получили универсальную верхнюю одежду для активной городской жизни. <p/><p>Парка сделана из высокотехнологичного утеплителя DuPont Sorona, рассчитанного до -20°/-25°C, в зависимости от личной термостойкости человека. В дизайне мы использовали декоративные ленты, геометрия которых стала узнаваемым и фирменным элементом SHU. </p><p>Параметры модели: рост — 180 см., размер куртки — L. На съемке использованы джинсы из летней коллекции SHU.</p>",
     "colorLabel": "Бежевый",
     "color": "wheat",
     "family": "raincoat",
@@ -10,7 +10,7 @@
     "slug": "raincoat-beige",
     "price": 9900,
     "oldPrice": "",
-    "sizes": ["md", "lg", "xl"],
+    "sizes": ["m", "l", "xl"],
     "video": "./assets/raincoat-beige-desk.mp4",
     "hero": "./assets/raincoat-beige-hero.jpg",
     "images": [
@@ -32,7 +32,7 @@
     "slug": "raincoat-blue",
     "price": 9900,
     "oldPrice": "",
-    "sizes": ["md", "lg", "xl"],
+    "sizes": ["m", "l", "xl"],
     "video": "./assets/raincoat-blue-desk.mp4",
     "hero": "./assets/raincoat-blue-hero.jpg",
     "images": [
@@ -55,7 +55,7 @@
     "slug": "coat-maxi-black",
     "price": 9900,
     "oldPrice": "",
-    "sizes": ["md", "lg", "xl"],
+    "sizes": ["m", "l", "xl"],
     "video": "./assets/coat-maxi-black-desk.mp4",
     "hero": "./assets/coat-maxi-black-hero.jpg",
     "images": [
@@ -78,7 +78,7 @@
     "slug": "coat-maxi-blue",
     "price": 13500,
     "oldPrice": "",
-    "sizes": ["md", "lg", "xl"],
+    "sizes": ["m", "l", "xl"],
     "video": "./assets/coat-maxi-blue-desk.mp4",
     "hero": "./assets/coat-maxi-blue-hero.jpg",
     "images": [
@@ -101,7 +101,7 @@
     "slug": "coat-maxi-beige",
     "price": 9900,
     "oldPrice": "",
-    "sizes": ["md", "lg", "xl"],
+    "sizes": ["m", "l", "xl"],
     "video": "./assets/coat-maxi-beige-desk.mp4",
     "hero": "./assets/coat-maxi-beige-hero.jpg",
     "images": [
@@ -124,7 +124,7 @@
     "slug": "coat-combo-gray",
     "price": 21900,
     "oldPrice": "",
-    "sizes": ["md", "lg", "xl"],
+    "sizes": ["m", "l", "xl"],
     "video": "./assets/coat-combo-gray-desk.mp4",
     "hero": "./assets/coat-combo-gray-hero.jpg",
     "images": [

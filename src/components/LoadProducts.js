@@ -24,7 +24,7 @@ const LoadProducts = ({ loadProducts }) => {
                     fluid(
                       maxWidth: 1800
                       srcSetBreakpoints: [600, 1800]
-                      quality: 85
+                      quality: 90
                     ) {
                       ...GatsbyImageSharpFluid_withWebp
                     }

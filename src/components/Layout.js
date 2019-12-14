@@ -1,7 +1,8 @@
 import React from "react"
-import "normalize.css"
-import "../styles/global.css"
-import styled from "styled-components"
+
+import styled, { ThemeProvider } from "styled-components"
+import theme from "../styles/theme"
+import GlobalStyle from "../styles/GlobalStyle"
 import { PersistGate } from "redux-persist/integration/react"
 import { persistor } from "../redux/store"
 
@@ -10,14 +11,17 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 const Layout = props => (
-  <Wrap>
-    <PersistGate loading={null} persistor={persistor}>
-      <LoadProducts />
-      <Header />
-      <main>{props.children}</main>
-      <Footer />
-    </PersistGate>
-  </Wrap>
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
+    <Wrap>
+      <PersistGate loading={null} persistor={persistor}>
+        <LoadProducts />
+        <Header />
+        <main>{props.children}</main>
+        <Footer />
+      </PersistGate>
+    </Wrap>
+  </ThemeProvider>
 )
 
 export default Layout

@@ -35,7 +35,7 @@ export default connect(mapStateToProps)(Colors)
 
 const Wrap = styled.div`
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `
 
 const Color = styled(Link)`
