@@ -65,7 +65,7 @@ export const Button = styled.button`
   outline: none;
   transition: filter 0.3s;
   :hover {
-    filter: brightness(80%);
+    filter:  ${props => (props.error ? 'none' : 'brightness(80%)')};
   }
 `
 
