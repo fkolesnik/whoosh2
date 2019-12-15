@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
-import theme from './theme'
+import { createGlobalStyle } from "styled-components";
+import theme from "./theme";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -31,6 +31,30 @@ p {
 
 small {font-size: 80%;}
 
-`
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity .2s;
+}
 
-export default GlobalStyle
+.ReactModal__Content {
+  transform: translate3d(0, -200%, 0);
+  backface-visibility: hidden;
+  will-change: transform;
+  transition: transform .4s ease-in-out;
+}
+
+.ReactModal__Content--after-open{
+    transform: translate3d(0, 0, 0);
+} 
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+`;
+
+export default GlobalStyle;

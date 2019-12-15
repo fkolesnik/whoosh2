@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box } from '../styles/Styles'
+import React from "react";
+import { Box } from "../styles/Styles";
 
 export default props => {
   return (
@@ -8,5 +8,5 @@ export default props => {
         <span key={size}>{size}</span>
       ))}
     </Box>
-  )
-}
+  );
+};

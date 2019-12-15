@@ -1,24 +1,24 @@
 module.exports = {
   siteMetadata: {
     title: `Whoosh`,
-    description: `Магазин женской одежды`,
+    description: `Магазин женской одежды`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Rubik:400,700:cyrillic&display=swap'],
-        },
-      },
+          families: ["Rubik:400,700:cyrillic&display=swap"]
+        }
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/`,
-      },
+        path: `./src/data/`
+      }
     },
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
@@ -32,8 +32,8 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/img/favicon.png`,
-      },
-    },
-  ],
-}
+        icon: `src/img/favicon.png`
+      }
+    }
+  ]
+};

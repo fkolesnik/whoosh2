@@ -1,36 +1,48 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { toggleCart } from '../redux/cart/cart.actions'
-import styled from 'styled-components'
-import { createStructuredSelector } from 'reselect'
-import theme from '../styles/theme'
+import React from "react";
+import { connect } from "react-redux";
+import { toggleCart } from "../redux/cart/cart.actions";
+import styled from "styled-components";
+import { createStructuredSelector } from "reselect";
+import theme from "../styles/theme";
 import {
   selectCartHidden,
-  selectCartItemsCount,
-} from '../redux/cart/cart.selectors'
-
-import cart from '../img/icon-hanger.svg'
-import close from '../img/icon-close.svg'
+  selectCartItemsCount
+} from "../redux/cart/cart.selectors";
+import Modal from "./Modal";
+import Cart from "./Cart";
+import cart from "../img/icon-hanger.svg";
+import close from "../img/icon-close.svg";
 
 const CartIcon = ({ toggle, hidden, count }) => {
   return (
-    <Wrap onClick={toggle}>
-      <img src={hidden ? cart : close} width={22} alt="" />
-      {count > 0 && <Count>{count}</Count>}
-    </Wrap>
-  )
-}
+    <>
+      <Wrap onClick={toggle}>
+        <img src={hidden ? cart : close} width={22} alt="" />
+        {count > 0 && <Count>{count}</Count>}
+      </Wrap>
+      <Modal
+        open={!hidden}
+        toggle={toggle}
+        title="Заказ"
+        width={460}
+        bg={theme.color.light}
+      >
+        <Cart />
+      </Modal>
+    </>
+  );
+};
 
 const mapStateToProps = createStructuredSelector({
   hidden: selectCartHidden,
-  count: selectCartItemsCount,
-})
+  count: selectCartItemsCount
+});
 
 const mapDispatchToProps = dispatch => ({
-  toggle: () => dispatch(toggleCart()),
-})
+  toggle: () => dispatch(toggleCart())
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(CartIcon)
+export default connect(mapStateToProps, mapDispatchToProps)(CartIcon);
 
 const Wrap = styled.button`
   position: relative;
@@ -56,7 +68,7 @@ const Wrap = styled.button`
       opacity: 1;
     }
   }
-`
+`;
 
 const Count = styled.div`
   position: absolute;
@@ -74,4 +86,4 @@ const Count = styled.div`
   color: #fff;
   background-color: #0d5df2;
   border-radius: 10px;
-`
+`;

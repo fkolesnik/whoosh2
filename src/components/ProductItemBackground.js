@@ -1,19 +1,19 @@
-import React from 'react'
-import styled from 'styled-components'
-import Img from 'gatsby-image'
+import React from "react";
+import styled from "styled-components";
+import Img from "gatsby-image";
 
 export default ({ product }) => {
   return (
     <Wrap>
       <Img
         fluid={product.hero.childImageSharp.fluid}
-        imgStyle={{ objectPosition: 'center top' }}
-        style={{ height: '100%', top: 0 }}
+        imgStyle={{ objectPosition: "center top" }}
+        style={{ height: "100%", top: 0 }}
         alt=""
       />
     </Wrap>
-  )
-}
+  );
+};
 
 const Wrap = styled.div`
   overflow: hidden;
@@ -23,4 +23,4 @@ const Wrap = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-`
+`;

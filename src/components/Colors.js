@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { changeFamilyHead } from '../redux/products/products.actions'
-import { connect } from 'react-redux'
-import { createStructuredSelector } from 'reselect'
-import { selectLoadProducts } from '../redux/products/products.selectors'
-import { Box, LabelCircle } from '../styles/Styles'
+import React from "react";
+import { Link } from "gatsby";
+import { changeFamilyHead } from "../redux/products/products.actions";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectLoadProducts } from "../redux/products/products.selectors";
+import { Box, LabelCircle } from "../styles/Styles";
 
 const Colors = ({ products, family, hover, dispatch }) => (
   <Box display="flex" mb={3}>
@@ -27,10 +27,10 @@ const Colors = ({ products, family, hover, dispatch }) => (
         />
       ))}
   </Box>
-)
+);
 
 const mapStateToProps = createStructuredSelector({
-  products: selectLoadProducts,
-})
+  products: selectLoadProducts
+});
 
-export default connect(mapStateToProps)(Colors)
+export default connect(mapStateToProps)(Colors);

@@ -10,7 +10,7 @@
     "slug": "raincoat-beige",
     "price": 9900,
     "oldPrice": "",
-    "sizes": ["m", "l", "xl"],
+    "sizes": ["M", "L", "XL"],
     "video": "./assets/raincoat-beige-desk.mp4",
     "hero": "./assets/raincoat-beige-hero.jpg",
     "images": [
@@ -32,7 +32,7 @@
     "slug": "raincoat-blue",
     "price": 9900,
     "oldPrice": "",
-    "sizes": ["m", "l", "xl"],
+    "sizes": ["M", "L", "XL"],
     "video": "./assets/raincoat-blue-desk.mp4",
     "hero": "./assets/raincoat-blue-hero.jpg",
     "images": [
@@ -55,7 +55,7 @@
     "slug": "coat-maxi-black",
     "price": 9900,
     "oldPrice": "",
-    "sizes": ["m", "l", "xl"],
+    "sizes": ["M", "L", "XL"],
     "video": "./assets/coat-maxi-black-desk.mp4",
     "hero": "./assets/coat-maxi-black-hero.jpg",
     "images": [
@@ -78,7 +78,7 @@
     "slug": "coat-maxi-blue",
     "price": 13500,
     "oldPrice": "",
-    "sizes": ["m", "l", "xl"],
+    "sizes": ["M", "L", "XL"],
     "video": "./assets/coat-maxi-blue-desk.mp4",
     "hero": "./assets/coat-maxi-blue-hero.jpg",
     "images": [
@@ -101,7 +101,7 @@
     "slug": "coat-maxi-beige",
     "price": 9900,
     "oldPrice": "",
-    "sizes": ["m", "l", "xl"],
+    "sizes": ["M", "L", "XL"],
     "video": "./assets/coat-maxi-beige-desk.mp4",
     "hero": "./assets/coat-maxi-beige-hero.jpg",
     "images": [
@@ -124,7 +124,7 @@
     "slug": "coat-combo-gray",
     "price": 21900,
     "oldPrice": "",
-    "sizes": ["m", "l", "xl"],
+    "sizes": ["M", "L", "XL"],
     "video": "./assets/coat-combo-gray-desk.mp4",
     "hero": "./assets/coat-combo-gray-hero.jpg",
     "images": [

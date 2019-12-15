@@ -1,35 +1,36 @@
-import React, { useState } from 'react'
-import { connect } from 'react-redux'
-import { addItem, toggleCart } from '../redux/cart/cart.actions'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import ProductMedia from '../components/ProductMedia'
-import Colors from '../components/Colors'
-import { Box, T1, Button, LabelCircle } from '../styles/Styles'
-import theme from '../styles/theme'
+import React, { useState } from "react";
+import { connect } from "react-redux";
+import { addItem, toggleCart } from "../redux/cart/cart.actions";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import ProductMedia from "../components/ProductMedia";
+import Colors from "../components/Colors";
+import { Box, T1, Button, LabelCircle } from "../styles/Styles";
+import theme from "../styles/theme";
+import SizesTable from "../components/SizesTable";
 
 const ProductPage = ({ data, addItem, toggleCart }) => {
-  const product = data.productsJson
-  const { title, family, sizes, description, price, images, video } = product
-  const [size, setSize] = useState('')
+  const product = data.productsJson;
+  const { title, family, sizes, description, price, images, video } = product;
+  const [size, setSize] = useState("");
 
   const onBuy = (product, size) => {
-    if (size && size !== 'error') {
-      const selectedProduct = { ...product, size }
-      addItem(selectedProduct)
-      toggleCart()
+    if (size && size !== "error") {
+      const selectedProduct = { ...product, size };
+      addItem(selectedProduct);
+      toggleCart();
     } else {
-      setSize('error')
+      setSize("error");
     }
-  }
+  };
 
   return (
     <Layout>
       <Box display="flex" flexWrap="wrap">
-        <Box width={[1, '64%']}>
+        <Box width={[1, "64%"]}>
           <ProductMedia images={images} video={video} />
         </Box>
-        <Box width={[1, '36%']}>
+        <Box width={[1, "36%"]}>
           <Box position="sticky" top={80} px={[2, 4]} pb={4}>
             <T1>
               <Box
@@ -42,7 +43,7 @@ const ProductPage = ({ data, addItem, toggleCart }) => {
               </Box>
             </T1>
             <Colors family={family} />
-            <Box mb={4}>
+            <Box mb={4} display="flex">
               {sizes.map(s => (
                 <LabelCircle
                   as="button"
@@ -50,18 +51,20 @@ const ProductPage = ({ data, addItem, toggleCart }) => {
                   mr={2}
                   key={s}
                   onClick={() => setSize(s)}
-                  error={size === 'error'}
+                  error={size === "error"}
                 >
                   {s}
                 </LabelCircle>
               ))}
+
+              <SizesTable />
             </Box>
             <Box mb={4}>
               <Button
                 onClick={() => onBuy(product, size)}
-                error={size === 'error'}
+                error={size === "error"}
               >
-                {size === 'error' ? 'Размер?' : 'Купить'}
+                {size === "error" ? "Размер?" : "Купить"}
               </Button>
             </Box>
             <Box dangerouslySetInnerHTML={{ __html: description }} />
@@ -69,15 +72,15 @@ const ProductPage = ({ data, addItem, toggleCart }) => {
         </Box>
       </Box>
     </Layout>
-  )
-}
+  );
+};
 
 const mapDispatchToProps = dispatch => ({
   addItem: item => dispatch(addItem(item)),
-  toggleCart: () => dispatch(toggleCart()),
-})
+  toggleCart: () => dispatch(toggleCart())
+});
 
-export default connect(null, mapDispatchToProps)(ProductPage)
+export default connect(null, mapDispatchToProps)(ProductPage);
 
 export const query = graphql`
   query($id: String!) {
@@ -105,4 +108,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

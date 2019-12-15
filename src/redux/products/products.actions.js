@@ -1,12 +1,12 @@
-import { productsTypes } from './products.types'
+import { productsTypes } from "./products.types";
 
 export const loadProducts = payload => ({
   type: productsTypes.LOAD_PRODUCTS,
-  payload,
-})
+  payload
+});
 
 export const changeFamilyHead = (family, id) => ({
   type: productsTypes.CHANGE_FAMILY_HEAD,
   family,
-  id,
-})
+  id
+});

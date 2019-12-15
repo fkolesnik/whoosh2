@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 import {
   background,
   border,
@@ -8,12 +8,12 @@ import {
   position,
   shadow,
   space,
-  typography,
-} from 'styled-system'
-import theme from './theme'
+  typography
+} from "styled-system";
+import theme from "./theme";
 
-const titleExtra = [space, layout, color, typography, shadow]
-const boxExtra = [
+export const titleExtra = [space, layout, color, typography, shadow];
+export const boxExtra = [
   space,
   layout,
   color,
@@ -23,12 +23,12 @@ const boxExtra = [
   background,
   border,
   position,
-  shadow,
-]
+  shadow
+];
 
 export const Box = styled.div`
   ${boxExtra}
-`
+`;
 
 export const T1 = styled.h1`
   font-size: ${theme.fontSizes.lg};
@@ -39,7 +39,7 @@ export const T1 = styled.h1`
     font-size: ${theme.fontSizes.xxl};
   }
   ${titleExtra}
-`
+`;
 
 export const T2 = styled.h2`
   font-size: ${theme.fontSizes.md};
@@ -50,10 +50,10 @@ export const T2 = styled.h2`
     font-size: ${theme.fontSizes.xl};
   }
   ${titleExtra}
-`
+`;
 
 export const Button = styled.button`
-  background-color: ${props => (props.error ? 'red' : theme.color.primary)};
+  background-color: ${props => (props.error ? "red" : theme.color.primary)};
   color: white;
   padding: 0.64rem 1.5rem;
   border-radius: 50px;
@@ -62,12 +62,14 @@ export const Button = styled.button`
   font-size: ${theme.fontSizes.md};
   letter-spacing: 1px;
   cursor: pointer;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.1), 0 2px 5px rgba(0, 0, 0, 0.2);
   outline: none;
   transition: filter 0.3s;
   :hover {
-    filter:  ${props => (props.error ? 'none' : 'brightness(80%)')};
+    filter: ${props => (props.error ? "none" : "brightness(80%)")};
   }
-`
+  ${layout}
+`;
 
 export const LabelCircle = styled.div`
   width: 40px;
@@ -83,14 +85,14 @@ export const LabelCircle = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${props =>
-    props.error ? 'zzz 0.82s cubic-bezier(.36,.07,.19,.97)' : 'none'};
+    props.error ? "zzz 0.82s cubic-bezier(.36,.07,.19,.97)" : "none"};
   outline: none;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
   transition: border 0.15s;
   will-change: border;
-  border: 3px solid ${props => (props.selected ? 'white' : 'transparent')};
+  border: 3px solid ${props => (props.selected ? "white" : "transparent")};
   @keyframes zzz {
     10%,
     90% {
@@ -114,4 +116,4 @@ export const LabelCircle = styled.div`
     }
   }
   ${boxExtra}
-`
+`;

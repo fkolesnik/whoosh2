@@ -1,7 +1,7 @@
-const path = require('path')
+const path = require("path");
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const result = await graphql(`
     {
@@ -14,22 +14,22 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
   // Check for any errors
   if (result.errors) {
-    throw new Error(result.errors)
+    throw new Error(result.errors);
   }
 
-  const { allProductsJson } = result.data
+  const { allProductsJson } = result.data;
 
   allProductsJson.edges.forEach(({ node }) => {
     createPage({
       path: node.slug,
       component: path.resolve(`./src/templates/product.js`),
       context: {
-        id: node.id,
-      },
-    })
-  })
-}
+        id: node.id
+      }
+    });
+  });
+};

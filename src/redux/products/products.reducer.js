@@ -1,25 +1,25 @@
-import { productsTypes } from './products.types'
-import { changeFamilyHead } from './products.utils'
+import { productsTypes } from "./products.types";
+import { changeFamilyHead } from "./products.utils";
 
 const INITIAL_STATE = {
-  items: [],
-}
+  items: []
+};
 
 const productsReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case productsTypes.LOAD_PRODUCTS:
       return {
         ...state,
-        items: action.payload,
-      }
+        items: action.payload
+      };
     case productsTypes.CHANGE_FAMILY_HEAD:
       return {
         ...state,
-        items: changeFamilyHead(state.items, action.family, action.id),
-      }
+        items: changeFamilyHead(state.items, action.family, action.id)
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default productsReducer
+export default productsReducer;
