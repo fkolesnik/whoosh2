@@ -32,7 +32,7 @@ const Modal = ({
     margin: "auto",
     border: "none",
     borderRadius: 8,
-    backgroundColor: bg ? bg : "white"
+    backgroundColor: bg ? bg : "white",
   };
 
   return (

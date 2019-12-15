@@ -37,7 +37,7 @@ const CartForm = () => {
 
             <Box display="flex">
                 <Input
-                    width={1/2}
+                    width={[1, 1/2]}
                     placeholder="Имя"
                     type="text"
                     name="name"
@@ -45,7 +45,7 @@ const CartForm = () => {
                     onChange={onChange}
                     required/>
                 <Input
-                    width={1/2}
+                    width={[1, 1/2]}
                     placeholder="Почта"
                     type="email"
                     name="email"
@@ -79,7 +79,7 @@ const CartForm = () => {
 
           <Box display="flex" mb={4}>
             <Input
-                width={3/4}
+                width={[7/10, 3/4]}
                 placeholder="Адрес"
                 type="text"
                 name="address"
@@ -88,7 +88,7 @@ const CartForm = () => {
                 required
             />
             <Input
-                width={1/4}
+                width={[3/10, 1/4]}
                 placeholder="Индекс"
                 type="text"
                 name="zip"
