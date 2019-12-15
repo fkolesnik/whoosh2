@@ -26,6 +26,7 @@ const CartIcon = ({ toggle, hidden, count }) => {
         title="Заказ"
         width={460}
         bg={theme.color.light}
+        overlayClose={false}
       >
         <Cart />
       </Modal>
