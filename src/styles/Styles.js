@@ -60,7 +60,7 @@ export const Button = styled.button`
   border: none;
   font-weight: 600;
   font-size: ${theme.fontSizes.md};
-  letter-spacing: 1px;
+  letter-spacing: .65px;
   cursor: pointer;
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.1), 0 2px 5px rgba(0, 0, 0, 0.2);
   outline: none;
