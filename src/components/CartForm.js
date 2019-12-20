@@ -98,9 +98,6 @@ const CartForm = () => {
             /></Box>
 
 
-
-
-
             <Button width={1} type="submit">
                 Оплатить
             </Button>

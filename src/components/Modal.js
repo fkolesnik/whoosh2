@@ -33,6 +33,8 @@ const Modal = ({
     border: "none",
     borderRadius: 8,
     backgroundColor: bg ? bg : "white",
+    paddingLeft: '2vw',
+    paddingRight: '2vw',
   };
 
   return (
