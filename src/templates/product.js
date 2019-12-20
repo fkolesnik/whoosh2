@@ -101,7 +101,7 @@ export const query = graphql`
       }
       images {
         childImageSharp {
-          fluid(maxWidth: 1600, srcSetBreakpoints: [800, 1600], quality: 90) {
+          fluid(maxWidth: 1600, srcSetBreakpoints: [300, 800, 1600], quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
