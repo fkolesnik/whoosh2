@@ -47,7 +47,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(CartIcon);
 
 const Wrap = styled.button`
   position: relative;
-  z-index: 5;
   margin-left: auto;
   width: 2.5rem;
   height: 2.5rem;

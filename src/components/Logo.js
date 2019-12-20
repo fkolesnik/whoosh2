@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCartHidden } from "../redux/cart/cart.selectors";
 
-export default () => {
+const Logo = ({ hidden }) => {
   return (
-    <Link to="/">
+    <Link to="/" style={!hidden ? { pointerEvents: "none" } : null}>
       <SVG width="150" viewBox="0 0 393 75" xmlns="http://www.w3.org/2000/svg">
         <title>Whoosh Shop Logo</title>
         <desc>Whoosh is a women clothes shop</desc>
@@ -13,6 +16,12 @@ export default () => {
     </Link>
   );
 };
+
+const mapStateToProps = createStructuredSelector({
+  hidden: selectCartHidden
+});
+
+export default connect(mapStateToProps)(Logo);
 
 const SVG = styled.svg`
   fill: white;

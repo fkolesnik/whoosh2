@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import { LabelCircle } from "../styles/Styles";
-import {connect} from "react-redux";
-import {createStructuredSelector} from "reselect";
-import {selectCartHidden} from "../redux/cart/cart.selectors";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCartHidden } from "../redux/cart/cart.selectors";
 
-const SizesTable = ({hidden}) => {
+const SizesTable = ({ hidden }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -25,7 +25,7 @@ const SizesTable = ({hidden}) => {
 };
 
 const mapStateToProps = createStructuredSelector({
-    hidden: selectCartHidden,
+  hidden: selectCartHidden
 });
 
 export default connect(mapStateToProps)(SizesTable);
