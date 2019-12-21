@@ -1,7 +1,22 @@
-import React from "react";
+import React, {Fragment} from "react";
 import styled from "styled-components";
 import {Box, boxExtra, Button} from "../styles/Styles";
 import theme from "../styles/theme";
+import countries from "../data/countries";
+
+const fields = [
+    {name: "name", placeholder: "Имя", type: "text", width: [1, 1 / 2]},
+    {name: "email", placeholder: "Почта", type: "email", width: [1, 1 / 2]},
+    {name: "country", placeholder: "Страна", width: [1, 1 / 2], select: true},
+    {name: "city", placeholder: "Город", type: "text", width: [1, 1 / 2]},
+    {
+        name: "address",
+        placeholder: "Адрес",
+        type: "text",
+        width: [7 / 10, 3 / 4]
+    },
+    {name: "zip", placeholder: "Индекс", type: "text", width: [3 / 10, 1 / 4]}
+];
 
 const INITIAL_VALUES = {
     email: "",
@@ -11,6 +26,26 @@ const INITIAL_VALUES = {
     zip: "",
     country: ""
 };
+
+const CountrySelect = ({field, onChange}) => (
+    <Select
+        as="select"
+        defaultValue="0"
+        onChange={onChange}
+        name={field.name}
+        width={field.width}
+        required
+    >
+        <option value="0" disabled hidden>
+            {field.placeholder}
+        </option>
+        {countries.map(country => (
+            <option value={country.name} key={country.code}>
+                {country.name}
+            </option>
+        ))}
+    </Select>
+);
 
 const CartForm = () => {
     const [values, setValues] = React.useState(INITIAL_VALUES);
@@ -23,85 +58,49 @@ const CartForm = () => {
         }));
     };
 
+    const onChangeSelect = value => {
+        console.log("value", value);
+        /* setValues(prevValues => ({
+               ...prevValues,
+               [e.target.name]: e.target.value
+             }));*/
+    };
+
     const onSubmit = e => {
         e.preventDefault();
         console.log("submit: ", values);
     };
 
     return (
-        <Box
-            as="form"
+        <Box as="form" onSubmit={onSubmit}>
+            {fields.map(field => (
+                <Fragment key={field.name}>
+                    {field.select ? (
+                            <CountrySelect
+                                field={field}
+                                onChange={onChange}
+                                key="select"
+                            />
 
-            onSubmit={onSubmit}
-        >
+                    ) : (
+                        <Input
+                            name={field.name}
+                            width={field.width}
+                            placeholder={field.placeholder}
+                            type={field.type}
+                            value={values[field.name]}
+                            onChange={onChange}
+                            required
+                        />
+                    )}
+                </Fragment>
+            ))}
 
-            <Box display="flex">
-                <Input
-                    width={[1, 1/2]}
-                    placeholder="Имя"
-                    type="text"
-                    name="name"
-                    value={values.name}
-                    onChange={onChange}
-                    required/>
-                <Input
-                    width={[1, 1/2]}
-                    placeholder="Почта"
-                    type="email"
-                    name="email"
-                    value={values.email}
-                    onChange={onChange}
-                    required
-                />
+            <Box mt={4}>
+                <Button width={1} type="submit">
+                    Оплатить
+                </Button>
             </Box>
-
-
-          <Box display="flex">
-            <Input
-                width={1/2}
-                placeholder="Страна"
-                type="text"
-                name="country"
-                value={values.country}
-                onChange={onChange}
-                required
-            />
-            <Input
-                width={1/2}
-                placeholder="Город"
-                type="text"
-                name="city"
-                value={values.city}
-                onChange={onChange}
-                required
-            />
-          </Box>
-
-          <Box display="flex" mb={4}>
-            <Input
-                width={[7/10, 3/4]}
-                placeholder="Адрес"
-                type="text"
-                name="address"
-                value={values.address}
-                onChange={onChange}
-                required
-            />
-            <Input
-                width={[3/10, 1/4]}
-                placeholder="Индекс"
-                type="text"
-                name="zip"
-                value={values.zip}
-                onChange={onChange}
-                required
-            /></Box>
-
-
-            <Button width={1} type="submit">
-                Оплатить
-            </Button>
-
         </Box>
     );
 };
@@ -111,13 +110,28 @@ export default CartForm;
 const Input = styled.input`
   font-size: 1rem;
   padding: 0.75rem 0.5rem;
-  border: 2px solid ${theme.color.light};
-  box-shadow: inset 0 0 1px rgba(0,0,0,.3);
-  outline: none;
+  border: 3px solid ${theme.color.light};
   border-radius: 6px;
   transition: all 0.2s;
   &:focus {
-    box-shadow: inset 0 0 1px ${theme.color.primary}; 
+    outline: none;
+    border-color: #d2e8ff;
   }
   ${boxExtra}
+`;
+
+const Select = styled(Input)`
+  font-size: inherit;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: white;
+  outline: none;
+  box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: none;
+  ::-ms-expand {
+    display: none;
+  }
 `;

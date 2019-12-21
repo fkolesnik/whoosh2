@@ -61,7 +61,7 @@ const Cart = ({ cartItems, total, dispatch }) => (
       })}
     </Box>
 
-    <CartForm />
+    {cartItems.length === 0 ? <div>Пусто</div> : <CartForm />}
   </>
 );
 

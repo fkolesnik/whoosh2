@@ -1,7 +1,7 @@
 const theme = {
   color: {
     primary: "#0d5df2",
-    light: "#fafafa"
+    light: "#f3f3f3"
   },
   breakpoints: ["769px", "1600px"],
   space: [0, ".25rem", "0.5rem", "1rem", "2rem", "3rem", "5rem"],
