@@ -1,1022 +1,1022 @@
 [
   {
-    "code": "AU",
-    "name": "Австралия"
+    "value": "AU",
+    "label": "Австралия"
   },
   {
-    "code": "AT",
-    "name": "Австрия"
+    "value": "AT",
+    "label": "Австрия"
   },
   {
-    "code": "AZ",
-    "name": "Азербайджан"
+    "value": "AZ",
+    "label": "Азербайджан"
   },
   {
-    "code": "AX",
-    "name": "Аландские о-ва"
+    "value": "AX",
+    "label": "Аландские о-ва"
   },
   {
-    "code": "AL",
-    "name": "Албания"
+    "value": "AL",
+    "label": "Албания"
   },
   {
-    "code": "DZ",
-    "name": "Алжир"
+    "value": "DZ",
+    "label": "Алжир"
   },
   {
-    "code": "AS",
-    "name": "Американское Самоа"
+    "value": "AS",
+    "label": "Американское Самоа"
   },
   {
-    "code": "AI",
-    "name": "Ангилья"
+    "value": "AI",
+    "label": "Ангилья"
   },
   {
-    "code": "AO",
-    "name": "Ангола"
+    "value": "AO",
+    "label": "Ангола"
   },
   {
-    "code": "AD",
-    "name": "Андорра"
+    "value": "AD",
+    "label": "Андорра"
   },
   {
-    "code": "AQ",
-    "name": "Антарктида"
+    "value": "AQ",
+    "label": "Антарктида"
   },
   {
-    "code": "AG",
-    "name": "Антигуа и Барбуда"
+    "value": "AG",
+    "label": "Антигуа и Барбуда"
   },
   {
-    "code": "AR",
-    "name": "Аргентина"
+    "value": "AR",
+    "label": "Аргентина"
   },
   {
-    "code": "AM",
-    "name": "Армения"
+    "value": "AM",
+    "label": "Армения"
   },
   {
-    "code": "AW",
-    "name": "Аруба"
+    "value": "AW",
+    "label": "Аруба"
   },
   {
-    "code": "AF",
-    "name": "Афганистан"
+    "value": "AF",
+    "label": "Афганистан"
   },
   {
-    "code": "BS",
-    "name": "Багамы"
+    "value": "BS",
+    "label": "Багамы"
   },
   {
-    "code": "BD",
-    "name": "Бангладеш"
+    "value": "BD",
+    "label": "Бангладеш"
   },
   {
-    "code": "BB",
-    "name": "Барбадос"
+    "value": "BB",
+    "label": "Барбадос"
   },
   {
-    "code": "BH",
-    "name": "Бахрейн"
+    "value": "BH",
+    "label": "Бахрейн"
   },
   {
-    "code": "BY",
-    "name": "Беларусь"
+    "value": "BY",
+    "label": "Беларусь"
   },
   {
-    "code": "BZ",
-    "name": "Белиз"
+    "value": "BZ",
+    "label": "Белиз"
   },
   {
-    "code": "BE",
-    "name": "Бельгия"
+    "value": "BE",
+    "label": "Бельгия"
   },
   {
-    "code": "BJ",
-    "name": "Бенин"
+    "value": "BJ",
+    "label": "Бенин"
   },
   {
-    "code": "BM",
-    "name": "Бермудские о-ва"
+    "value": "BM",
+    "label": "Бермудские о-ва"
   },
   {
-    "code": "BG",
-    "name": "Болгария"
+    "value": "BG",
+    "label": "Болгария"
   },
   {
-    "code": "BO",
-    "name": "Боливия"
+    "value": "BO",
+    "label": "Боливия"
   },
   {
-    "code": "BQ",
-    "name": "Бонэйр} Синт-Эстатиус и Саба"
+    "value": "BQ",
+    "label": "Бонэйр} Синт-Эстатиус и Саба"
   },
   {
-    "code": "BA",
-    "name": "Босния и Герцеговина"
+    "value": "BA",
+    "label": "Босния и Герцеговина"
   },
   {
-    "code": "BW",
-    "name": "Ботсвана"
+    "value": "BW",
+    "label": "Ботсвана"
   },
   {
-    "code": "BR",
-    "name": "Бразилия"
+    "value": "BR",
+    "label": "Бразилия"
   },
   {
-    "code": "IO",
-    "name": "Британская территория в Индийском океане"
+    "value": "IO",
+    "label": "Британская территория в Индийском океане"
   },
   {
-    "code": "BN",
-    "name": "Бруней-Даруссалам"
+    "value": "BN",
+    "label": "Бруней-Даруссалам"
   },
   {
-    "code": "BF",
-    "name": "Буркина-Фасо"
+    "value": "BF",
+    "label": "Буркина-Фасо"
   },
   {
-    "code": "BI",
-    "name": "Бурунди"
+    "value": "BI",
+    "label": "Бурунди"
   },
   {
-    "code": "BT",
-    "name": "Бутан"
+    "value": "BT",
+    "label": "Бутан"
   },
   {
-    "code": "VU",
-    "name": "Вануату"
+    "value": "VU",
+    "label": "Вануату"
   },
   {
-    "code": "VA",
-    "name": "Ватикан"
+    "value": "VA",
+    "label": "Ватикан"
   },
   {
-    "code": "GB",
-    "name": "Великобритания"
+    "value": "GB",
+    "label": "Великобритания"
   },
   {
-    "code": "HU",
-    "name": "Венгрия"
+    "value": "HU",
+    "label": "Венгрия"
   },
   {
-    "code": "VE",
-    "name": "Венесуэла"
+    "value": "VE",
+    "label": "Венесуэла"
   },
   {
-    "code": "VG",
-    "name": "Виргинские о-ва (Великобритания)"
+    "value": "VG",
+    "label": "Виргинские о-ва (Великобритания)"
   },
   {
-    "code": "VI",
-    "name": "Виргинские о-ва (США)"
+    "value": "VI",
+    "label": "Виргинские о-ва (США)"
   },
   {
-    "code": "UM",
-    "name": "Внешние малые о-ва (США)"
+    "value": "UM",
+    "label": "Внешние малые о-ва (США)"
   },
   {
-    "code": "TL",
-    "name": "Восточный Тимор"
+    "value": "TL",
+    "label": "Восточный Тимор"
   },
   {
-    "code": "VN",
-    "name": "Вьетнам"
+    "value": "VN",
+    "label": "Вьетнам"
   },
   {
-    "code": "GA",
-    "name": "Габон"
+    "value": "GA",
+    "label": "Габон"
   },
   {
-    "code": "HT",
-    "name": "Гаити"
+    "value": "HT",
+    "label": "Гаити"
   },
   {
-    "code": "GY",
-    "name": "Гайана"
+    "value": "GY",
+    "label": "Гайана"
   },
   {
-    "code": "GM",
-    "name": "Гамбия"
+    "value": "GM",
+    "label": "Гамбия"
   },
   {
-    "code": "GH",
-    "name": "Гана"
+    "value": "GH",
+    "label": "Гана"
   },
   {
-    "code": "GP",
-    "name": "Гваделупа"
+    "value": "GP",
+    "label": "Гваделупа"
   },
   {
-    "code": "GT",
-    "name": "Гватемала"
+    "value": "GT",
+    "label": "Гватемала"
   },
   {
-    "code": "GN",
-    "name": "Гвинея"
+    "value": "GN",
+    "label": "Гвинея"
   },
   {
-    "code": "GW",
-    "name": "Гвинея-Бисау"
+    "value": "GW",
+    "label": "Гвинея-Бисау"
   },
   {
-    "code": "DE",
-    "name": "Германия"
+    "value": "DE",
+    "label": "Германия"
   },
   {
-    "code": "GG",
-    "name": "Гернси"
+    "value": "GG",
+    "label": "Гернси"
   },
   {
-    "code": "GI",
-    "name": "Гибралтар"
+    "value": "GI",
+    "label": "Гибралтар"
   },
   {
-    "code": "HN",
-    "name": "Гондурас"
+    "value": "HN",
+    "label": "Гондурас"
   },
   {
-    "code": "HK",
-    "name": "Гонконг (САР)"
+    "value": "HK",
+    "label": "Гонконг (САР)"
   },
   {
-    "code": "GD",
-    "name": "Гренада"
+    "value": "GD",
+    "label": "Гренада"
   },
   {
-    "code": "GL",
-    "name": "Гренландия"
+    "value": "GL",
+    "label": "Гренландия"
   },
   {
-    "code": "GR",
-    "name": "Греция"
+    "value": "GR",
+    "label": "Греция"
   },
   {
-    "code": "GE",
-    "name": "Грузия"
+    "value": "GE",
+    "label": "Грузия"
   },
   {
-    "code": "GU",
-    "name": "Гуам"
+    "value": "GU",
+    "label": "Гуам"
   },
   {
-    "code": "DK",
-    "name": "Дания"
+    "value": "DK",
+    "label": "Дания"
   },
   {
-    "code": "JE",
-    "name": "Джерси"
+    "value": "JE",
+    "label": "Джерси"
   },
   {
-    "code": "DJ",
-    "name": "Джибути"
+    "value": "DJ",
+    "label": "Джибути"
   },
   {
-    "code": "DG",
-    "name": "Диего-Гарсия"
+    "value": "DG",
+    "label": "Диего-Гарсия"
   },
   {
-    "code": "DM",
-    "name": "Доминика"
+    "value": "DM",
+    "label": "Доминика"
   },
   {
-    "code": "DO",
-    "name": "Доминиканская Республика"
+    "value": "DO",
+    "label": "Доминиканская Республика"
   },
   {
-    "code": "EG",
-    "name": "Египет"
+    "value": "EG",
+    "label": "Египет"
   },
   {
-    "code": "ZM",
-    "name": "Замбия"
+    "value": "ZM",
+    "label": "Замбия"
   },
   {
-    "code": "EH",
-    "name": "Западная Сахара"
+    "value": "EH",
+    "label": "Западная Сахара"
   },
   {
-    "code": "ZW",
-    "name": "Зимбабве"
+    "value": "ZW",
+    "label": "Зимбабве"
   },
   {
-    "code": "IL",
-    "name": "Израиль"
+    "value": "IL",
+    "label": "Израиль"
   },
   {
-    "code": "IN",
-    "name": "Индия"
+    "value": "IN",
+    "label": "Индия"
   },
   {
-    "code": "ID",
-    "name": "Индонезия"
+    "value": "ID",
+    "label": "Индонезия"
   },
   {
-    "code": "JO",
-    "name": "Иордания"
+    "value": "JO",
+    "label": "Иордания"
   },
   {
-    "code": "IQ",
-    "name": "Ирак"
+    "value": "IQ",
+    "label": "Ирак"
   },
   {
-    "code": "IR",
-    "name": "Иран"
+    "value": "IR",
+    "label": "Иран"
   },
   {
-    "code": "IE",
-    "name": "Ирландия"
+    "value": "IE",
+    "label": "Ирландия"
   },
   {
-    "code": "IS",
-    "name": "Исландия"
+    "value": "IS",
+    "label": "Исландия"
   },
   {
-    "code": "ES",
-    "name": "Испания"
+    "value": "ES",
+    "label": "Испания"
   },
   {
-    "code": "IT",
-    "name": "Италия"
+    "value": "IT",
+    "label": "Италия"
   },
   {
-    "code": "YE",
-    "name": "Йемен"
+    "value": "YE",
+    "label": "Йемен"
   },
   {
-    "code": "CV",
-    "name": "Кабо-Верде"
+    "value": "CV",
+    "label": "Кабо-Верде"
   },
   {
-    "code": "KZ",
-    "name": "Казахстан"
+    "value": "KZ",
+    "label": "Казахстан"
   },
   {
-    "code": "KH",
-    "name": "Камбоджа"
+    "value": "KH",
+    "label": "Камбоджа"
   },
   {
-    "code": "CM",
-    "name": "Камерун"
+    "value": "CM",
+    "label": "Камерун"
   },
   {
-    "code": "CA",
-    "name": "Канада"
+    "value": "CA",
+    "label": "Канада"
   },
   {
-    "code": "IC",
-    "name": "Канарские о-ва"
+    "value": "IC",
+    "label": "Канарские о-ва"
   },
   {
-    "code": "QA",
-    "name": "Катар"
+    "value": "QA",
+    "label": "Катар"
   },
   {
-    "code": "KE",
-    "name": "Кения"
+    "value": "KE",
+    "label": "Кения"
   },
   {
-    "code": "CY",
-    "name": "Кипр"
+    "value": "CY",
+    "label": "Кипр"
   },
   {
-    "code": "KG",
-    "name": "Киргизия"
+    "value": "KG",
+    "label": "Киргизия"
   },
   {
-    "code": "KI",
-    "name": "Кирибати"
+    "value": "KI",
+    "label": "Кирибати"
   },
   {
-    "code": "CN",
-    "name": "Китай"
+    "value": "CN",
+    "label": "Китай"
   },
   {
-    "code": "KP",
-    "name": "КНДР"
+    "value": "KP",
+    "label": "КНДР"
   },
   {
-    "code": "CC",
-    "name": "Кокосовые о-ва"
+    "value": "CC",
+    "label": "Кокосовые о-ва"
   },
   {
-    "code": "CO",
-    "name": "Колумбия"
+    "value": "CO",
+    "label": "Колумбия"
   },
   {
-    "code": "KM",
-    "name": "Коморы"
+    "value": "KM",
+    "label": "Коморы"
   },
   {
-    "code": "CG",
-    "name": "Конго - Браззавиль"
+    "value": "CG",
+    "label": "Конго - Браззавиль"
   },
   {
-    "code": "CD",
-    "name": "Конго - Киншаса"
+    "value": "CD",
+    "label": "Конго - Киншаса"
   },
   {
-    "code": "XK",
-    "name": "Косово"
+    "value": "XK",
+    "label": "Косово"
   },
   {
-    "code": "CR",
-    "name": "Коста-Рика"
+    "value": "CR",
+    "label": "Коста-Рика"
   },
   {
-    "code": "CI",
-    "name": "Кот-д’Ивуар"
+    "value": "CI",
+    "label": "Кот-д’Ивуар"
   },
   {
-    "code": "CU",
-    "name": "Куба"
+    "value": "CU",
+    "label": "Куба"
   },
   {
-    "code": "KW",
-    "name": "Кувейт"
+    "value": "KW",
+    "label": "Кувейт"
   },
   {
-    "code": "CW",
-    "name": "Кюрасао"
+    "value": "CW",
+    "label": "Кюрасао"
   },
   {
-    "code": "LA",
-    "name": "Лаос"
+    "value": "LA",
+    "label": "Лаос"
   },
   {
-    "code": "LV",
-    "name": "Латвия"
+    "value": "LV",
+    "label": "Латвия"
   },
   {
-    "code": "LS",
-    "name": "Лесото"
+    "value": "LS",
+    "label": "Лесото"
   },
   {
-    "code": "LR",
-    "name": "Либерия"
+    "value": "LR",
+    "label": "Либерия"
   },
   {
-    "code": "LB",
-    "name": "Ливан"
+    "value": "LB",
+    "label": "Ливан"
   },
   {
-    "code": "LY",
-    "name": "Ливия"
+    "value": "LY",
+    "label": "Ливия"
   },
   {
-    "code": "LT",
-    "name": "Литва"
+    "value": "LT",
+    "label": "Литва"
   },
   {
-    "code": "LI",
-    "name": "Лихтенштейн"
+    "value": "LI",
+    "label": "Лихтенштейн"
   },
   {
-    "code": "LU",
-    "name": "Люксембург"
+    "value": "LU",
+    "label": "Люксембург"
   },
   {
-    "code": "MU",
-    "name": "Маврикий"
+    "value": "MU",
+    "label": "Маврикий"
   },
   {
-    "code": "MR",
-    "name": "Мавритания"
+    "value": "MR",
+    "label": "Мавритания"
   },
   {
-    "code": "MG",
-    "name": "Мадагаскар"
+    "value": "MG",
+    "label": "Мадагаскар"
   },
   {
-    "code": "YT",
-    "name": "Майотта"
+    "value": "YT",
+    "label": "Майотта"
   },
   {
-    "code": "MO",
-    "name": "Макао (САР)"
+    "value": "MO",
+    "label": "Макао (САР)"
   },
   {
-    "code": "MW",
-    "name": "Малави"
+    "value": "MW",
+    "label": "Малави"
   },
   {
-    "code": "MY",
-    "name": "Малайзия"
+    "value": "MY",
+    "label": "Малайзия"
   },
   {
-    "code": "ML",
-    "name": "Мали"
+    "value": "ML",
+    "label": "Мали"
   },
   {
-    "code": "MV",
-    "name": "Мальдивы"
+    "value": "MV",
+    "label": "Мальдивы"
   },
   {
-    "code": "MT",
-    "name": "Мальта"
+    "value": "MT",
+    "label": "Мальта"
   },
   {
-    "code": "MA",
-    "name": "Марокко"
+    "value": "MA",
+    "label": "Марокко"
   },
   {
-    "code": "MQ",
-    "name": "Мартиника"
+    "value": "MQ",
+    "label": "Мартиника"
   },
   {
-    "code": "MH",
-    "name": "Маршалловы Острова"
+    "value": "MH",
+    "label": "Маршалловы Острова"
   },
   {
-    "code": "MX",
-    "name": "Мексика"
+    "value": "MX",
+    "label": "Мексика"
   },
   {
-    "code": "MZ",
-    "name": "Мозамбик"
+    "value": "MZ",
+    "label": "Мозамбик"
   },
   {
-    "code": "MD",
-    "name": "Молдова"
+    "value": "MD",
+    "label": "Молдова"
   },
   {
-    "code": "MC",
-    "name": "Монако"
+    "value": "MC",
+    "label": "Монако"
   },
   {
-    "code": "MN",
-    "name": "Монголия"
+    "value": "MN",
+    "label": "Монголия"
   },
   {
-    "code": "MS",
-    "name": "Монтсеррат"
+    "value": "MS",
+    "label": "Монтсеррат"
   },
   {
-    "code": "MM",
-    "name": "Мьянма (Бирма)"
+    "value": "MM",
+    "label": "Мьянма (Бирма)"
   },
   {
-    "code": "NA",
-    "name": "Намибия"
+    "value": "NA",
+    "label": "Намибия"
   },
   {
-    "code": "NR",
-    "name": "Науру"
+    "value": "NR",
+    "label": "Науру"
   },
   {
-    "code": "NP",
-    "name": "Непал"
+    "value": "NP",
+    "label": "Непал"
   },
   {
-    "code": "NE",
-    "name": "Нигер"
+    "value": "NE",
+    "label": "Нигер"
   },
   {
-    "code": "NG",
-    "name": "Нигерия"
+    "value": "NG",
+    "label": "Нигерия"
   },
   {
-    "code": "NL",
-    "name": "Нидерланды"
+    "value": "NL",
+    "label": "Нидерланды"
   },
   {
-    "code": "NI",
-    "name": "Никарагуа"
+    "value": "NI",
+    "label": "Никарагуа"
   },
   {
-    "code": "NU",
-    "name": "Ниуэ"
+    "value": "NU",
+    "label": "Ниуэ"
   },
   {
-    "code": "NZ",
-    "name": "Новая Зеландия"
+    "value": "NZ",
+    "label": "Новая Зеландия"
   },
   {
-    "code": "NC",
-    "name": "Новая Каледония"
+    "value": "NC",
+    "label": "Новая Каледония"
   },
   {
-    "code": "NO",
-    "name": "Норвегия"
+    "value": "NO",
+    "label": "Норвегия"
   },
   {
-    "code": "AC",
-    "name": "о-в Вознесения"
+    "value": "AC",
+    "label": "о-в Вознесения"
   },
   {
-    "code": "IM",
-    "name": "о-в Мэн"
+    "value": "IM",
+    "label": "о-в Мэн"
   },
   {
-    "code": "NF",
-    "name": "о-в Норфолк"
+    "value": "NF",
+    "label": "о-в Норфолк"
   },
   {
-    "code": "CX",
-    "name": "о-в Рождества"
+    "value": "CX",
+    "label": "о-в Рождества"
   },
   {
-    "code": "SH",
-    "name": "о-в Св. Елены"
+    "value": "SH",
+    "label": "о-в Св. Елены"
   },
   {
-    "code": "PN",
-    "name": "о-ва Питкэрн"
+    "value": "PN",
+    "label": "о-ва Питкэрн"
   },
   {
-    "code": "TC",
-    "name": "о-ва Тёркс и Кайкос"
+    "value": "TC",
+    "label": "о-ва Тёркс и Кайкос"
   },
   {
-    "code": "AE",
-    "name": "ОАЭ"
+    "value": "AE",
+    "label": "ОАЭ"
   },
   {
-    "code": "OM",
-    "name": "Оман"
+    "value": "OM",
+    "label": "Оман"
   },
   {
-    "code": "KY",
-    "name": "Острова Кайман"
+    "value": "KY",
+    "label": "Острова Кайман"
   },
   {
-    "code": "CK",
-    "name": "Острова Кука"
+    "value": "CK",
+    "label": "Острова Кука"
   },
   {
-    "code": "PK",
-    "name": "Пакистан"
+    "value": "PK",
+    "label": "Пакистан"
   },
   {
-    "code": "PW",
-    "name": "Палау"
+    "value": "PW",
+    "label": "Палау"
   },
   {
-    "code": "PS",
-    "name": "Палестинские территории"
+    "value": "PS",
+    "label": "Палестинские территории"
   },
   {
-    "code": "PA",
-    "name": "Панама"
+    "value": "PA",
+    "label": "Панама"
   },
   {
-    "code": "PG",
-    "name": "Папуа — Новая Гвинея"
+    "value": "PG",
+    "label": "Папуа — Новая Гвинея"
   },
   {
-    "code": "PY",
-    "name": "Парагвай"
+    "value": "PY",
+    "label": "Парагвай"
   },
   {
-    "code": "PE",
-    "name": "Перу"
+    "value": "PE",
+    "label": "Перу"
   },
   {
-    "code": "PL",
-    "name": "Польша"
+    "value": "PL",
+    "label": "Польша"
   },
   {
-    "code": "PT",
-    "name": "Португалия"
+    "value": "PT",
+    "label": "Португалия"
   },
   {
-    "code": "XB",
-    "name": "псевдо-Bidi"
+    "value": "XB",
+    "label": "псевдо-Bidi"
   },
   {
-    "code": "XA",
-    "name": "псевдоакценты"
+    "value": "XA",
+    "label": "псевдоакценты"
   },
   {
-    "code": "PR",
-    "name": "Пуэрто-Рико"
+    "value": "PR",
+    "label": "Пуэрто-Рико"
   },
   {
-    "code": "KR",
-    "name": "Республика Корея"
+    "value": "KR",
+    "label": "Республика Корея"
   },
   {
-    "code": "RE",
-    "name": "Реюньон"
+    "value": "RE",
+    "label": "Реюньон"
   },
   {
-    "code": "RU",
-    "name": "Россия"
+    "value": "RU",
+    "label": "Россия"
   },
   {
-    "code": "RW",
-    "name": "Руанда"
+    "value": "RW",
+    "label": "Руанда"
   },
   {
-    "code": "RO",
-    "name": "Румыния"
+    "value": "RO",
+    "label": "Румыния"
   },
   {
-    "code": "SV",
-    "name": "Сальвадор"
+    "value": "SV",
+    "label": "Сальвадор"
   },
   {
-    "code": "WS",
-    "name": "Самоа"
+    "value": "WS",
+    "label": "Самоа"
   },
   {
-    "code": "SM",
-    "name": "Сан-Марино"
+    "value": "SM",
+    "label": "Сан-Марино"
   },
   {
-    "code": "ST",
-    "name": "Сан-Томе и Принсипи"
+    "value": "ST",
+    "label": "Сан-Томе и Принсипи"
   },
   {
-    "code": "SA",
-    "name": "Саудовская Аравия"
+    "value": "SA",
+    "label": "Саудовская Аравия"
   },
   {
-    "code": "MK",
-    "name": "Северная Македония"
+    "value": "MK",
+    "label": "Северная Македония"
   },
   {
-    "code": "MP",
-    "name": "Северные Марианские о-ва"
+    "value": "MP",
+    "label": "Северные Марианские о-ва"
   },
   {
-    "code": "SC",
-    "name": "Сейшельские Острова"
+    "value": "SC",
+    "label": "Сейшельские Острова"
   },
   {
-    "code": "BL",
-    "name": "Сен-Бартелеми"
+    "value": "BL",
+    "label": "Сен-Бартелеми"
   },
   {
-    "code": "MF",
-    "name": "Сен-Мартен"
+    "value": "MF",
+    "label": "Сен-Мартен"
   },
   {
-    "code": "PM",
-    "name": "Сен-Пьер и Микелон"
+    "value": "PM",
+    "label": "Сен-Пьер и Микелон"
   },
   {
-    "code": "SN",
-    "name": "Сенегал"
+    "value": "SN",
+    "label": "Сенегал"
   },
   {
-    "code": "VC",
-    "name": "Сент-Винсент и Гренадины"
+    "value": "VC",
+    "label": "Сент-Винсент и Гренадины"
   },
   {
-    "code": "KN",
-    "name": "Сент-Китс и Невис"
+    "value": "KN",
+    "label": "Сент-Китс и Невис"
   },
   {
-    "code": "LC",
-    "name": "Сент-Люсия"
+    "value": "LC",
+    "label": "Сент-Люсия"
   },
   {
-    "code": "RS",
-    "name": "Сербия"
+    "value": "RS",
+    "label": "Сербия"
   },
   {
-    "code": "EA",
-    "name": "Сеута и Мелилья"
+    "value": "EA",
+    "label": "Сеута и Мелилья"
   },
   {
-    "code": "SG",
-    "name": "Сингапур"
+    "value": "SG",
+    "label": "Сингапур"
   },
   {
-    "code": "SX",
-    "name": "Синт-Мартен"
+    "value": "SX",
+    "label": "Синт-Мартен"
   },
   {
-    "code": "SY",
-    "name": "Сирия"
+    "value": "SY",
+    "label": "Сирия"
   },
   {
-    "code": "SK",
-    "name": "Словакия"
+    "value": "SK",
+    "label": "Словакия"
   },
   {
-    "code": "SI",
-    "name": "Словения"
+    "value": "SI",
+    "label": "Словения"
   },
   {
-    "code": "US",
-    "name": "Соединенные Штаты"
+    "value": "US",
+    "label": "Соединенные Штаты"
   },
   {
-    "code": "SB",
-    "name": "Соломоновы Острова"
+    "value": "SB",
+    "label": "Соломоновы Острова"
   },
   {
-    "code": "SO",
-    "name": "Сомали"
+    "value": "SO",
+    "label": "Сомали"
   },
   {
-    "code": "SD",
-    "name": "Судан"
+    "value": "SD",
+    "label": "Судан"
   },
   {
-    "code": "SR",
-    "name": "Суринам"
+    "value": "SR",
+    "label": "Суринам"
   },
   {
-    "code": "SL",
-    "name": "Сьерра-Леоне"
+    "value": "SL",
+    "label": "Сьерра-Леоне"
   },
   {
-    "code": "TJ",
-    "name": "Таджикистан"
+    "value": "TJ",
+    "label": "Таджикистан"
   },
   {
-    "code": "TH",
-    "name": "Таиланд"
+    "value": "TH",
+    "label": "Таиланд"
   },
   {
-    "code": "TW",
-    "name": "Тайвань"
+    "value": "TW",
+    "label": "Тайвань"
   },
   {
-    "code": "TZ",
-    "name": "Танзания"
+    "value": "TZ",
+    "label": "Танзания"
   },
   {
-    "code": "TG",
-    "name": "Того"
+    "value": "TG",
+    "label": "Того"
   },
   {
-    "code": "TK",
-    "name": "Токелау"
+    "value": "TK",
+    "label": "Токелау"
   },
   {
-    "code": "TO",
-    "name": "Тонга"
+    "value": "TO",
+    "label": "Тонга"
   },
   {
-    "code": "TT",
-    "name": "Тринидад и Тобаго"
+    "value": "TT",
+    "label": "Тринидад и Тобаго"
   },
   {
-    "code": "TA",
-    "name": "Тристан-да-Кунья"
+    "value": "TA",
+    "label": "Тристан-да-Кунья"
   },
   {
-    "code": "TV",
-    "name": "Тувалу"
+    "value": "TV",
+    "label": "Тувалу"
   },
   {
-    "code": "TN",
-    "name": "Тунис"
+    "value": "TN",
+    "label": "Тунис"
   },
   {
-    "code": "TM",
-    "name": "Туркменистан"
+    "value": "TM",
+    "label": "Туркменистан"
   },
   {
-    "code": "TR",
-    "name": "Турция"
+    "value": "TR",
+    "label": "Турция"
   },
   {
-    "code": "UG",
-    "name": "Уганда"
+    "value": "UG",
+    "label": "Уганда"
   },
   {
-    "code": "UZ",
-    "name": "Узбекистан"
+    "value": "UZ",
+    "label": "Узбекистан"
   },
   {
-    "code": "UA",
-    "name": "Украина"
+    "value": "UA",
+    "label": "Украина"
   },
   {
-    "code": "WF",
-    "name": "Уоллис и Футуна"
+    "value": "WF",
+    "label": "Уоллис и Футуна"
   },
   {
-    "code": "UY",
-    "name": "Уругвай"
+    "value": "UY",
+    "label": "Уругвай"
   },
   {
-    "code": "FO",
-    "name": "Фарерские о-ва"
+    "value": "FO",
+    "label": "Фарерские о-ва"
   },
   {
-    "code": "FM",
-    "name": "Федеративные Штаты Микронезии"
+    "value": "FM",
+    "label": "Федеративные Штаты Микронезии"
   },
   {
-    "code": "FJ",
-    "name": "Фиджи"
+    "value": "FJ",
+    "label": "Фиджи"
   },
   {
-    "code": "PH",
-    "name": "Филиппины"
+    "value": "PH",
+    "label": "Филиппины"
   },
   {
-    "code": "FI",
-    "name": "Финляндия"
+    "value": "FI",
+    "label": "Финляндия"
   },
   {
-    "code": "FK",
-    "name": "Фолклендские о-ва"
+    "value": "FK",
+    "label": "Фолклендские о-ва"
   },
   {
-    "code": "FR",
-    "name": "Франция"
+    "value": "FR",
+    "label": "Франция"
   },
   {
-    "code": "GF",
-    "name": "Французская Гвиана"
+    "value": "GF",
+    "label": "Французская Гвиана"
   },
   {
-    "code": "PF",
-    "name": "Французская Полинезия"
+    "value": "PF",
+    "label": "Французская Полинезия"
   },
   {
-    "code": "TF",
-    "name": "Французские Южные территории"
+    "value": "TF",
+    "label": "Французские Южные территории"
   },
   {
-    "code": "HR",
-    "name": "Хорватия"
+    "value": "HR",
+    "label": "Хорватия"
   },
   {
-    "code": "CF",
-    "name": "Центрально-Африканская Республика"
+    "value": "CF",
+    "label": "Центрально-Африканская Республика"
   },
   {
-    "code": "TD",
-    "name": "Чад"
+    "value": "TD",
+    "label": "Чад"
   },
   {
-    "code": "ME",
-    "name": "Черногория"
+    "value": "ME",
+    "label": "Черногория"
   },
   {
-    "code": "CZ",
-    "name": "Чехия"
+    "value": "CZ",
+    "label": "Чехия"
   },
   {
-    "code": "CL",
-    "name": "Чили"
+    "value": "CL",
+    "label": "Чили"
   },
   {
-    "code": "CH",
-    "name": "Швейцария"
+    "value": "CH",
+    "label": "Швейцария"
   },
   {
-    "code": "SE",
-    "name": "Швеция"
+    "value": "SE",
+    "label": "Швеция"
   },
   {
-    "code": "SJ",
-    "name": "Шпицберген и Ян-Майен"
+    "value": "SJ",
+    "label": "Шпицберген и Ян-Майен"
   },
   {
-    "code": "LK",
-    "name": "Шри-Ланка"
+    "value": "LK",
+    "label": "Шри-Ланка"
   },
   {
-    "code": "EC",
-    "name": "Эквадор"
+    "value": "EC",
+    "label": "Эквадор"
   },
   {
-    "code": "GQ",
-    "name": "Экваториальная Гвинея"
+    "value": "GQ",
+    "label": "Экваториальная Гвинея"
   },
   {
-    "code": "ER",
-    "name": "Эритрея"
+    "value": "ER",
+    "label": "Эритрея"
   },
   {
-    "code": "SZ",
-    "name": "Эсватини"
+    "value": "SZ",
+    "label": "Эсватини"
   },
   {
-    "code": "EE",
-    "name": "Эстония"
+    "value": "EE",
+    "label": "Эстония"
   },
   {
-    "code": "ET",
-    "name": "Эфиопия"
+    "value": "ET",
+    "label": "Эфиопия"
   },
   {
-    "code": "GS",
-    "name": "Южная Георгия и Южные Сандвичевы о-ва"
+    "value": "GS",
+    "label": "Южная Георгия и Южные Сандвичевы о-ва"
   },
   {
-    "code": "ZA",
-    "name": "Южно-Африканская Республика"
+    "value": "ZA",
+    "label": "Южно-Африканская Республика"
   },
   {
-    "code": "SS",
-    "name": "Южный Судан"
+    "value": "SS",
+    "label": "Южный Судан"
   },
   {
-    "code": "JM",
-    "name": "Ямайка"
+    "value": "JM",
+    "label": "Ямайка"
   },
   {
-    "code": "JP",
-    "name": "Япония"
+    "value": "JP",
+    "label": "Япония"
   }
 ]
