@@ -44,7 +44,7 @@ const ProductPage = ({ data, addItem, toggleCart }) => {
             </T1>
             <Colors family={family} />
             <Box mb={4} display="flex">
-              {sizes.map(s => (
+              {sizes.map((s) => (
                 <LabelCircle
                   as="button"
                   selected={s === size}
@@ -75,8 +75,8 @@ const ProductPage = ({ data, addItem, toggleCart }) => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-  addItem: item => dispatch(addItem(item)),
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
   toggleCart: () => dispatch(toggleCart()),
 });
 

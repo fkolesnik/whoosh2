@@ -2,7 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 import { Box } from "../styles/Styles";
 
-export default props => {
+export default (props) => {
   const { images, video } = props;
   return (
     <Box display="flex" flexWrap="wrap">

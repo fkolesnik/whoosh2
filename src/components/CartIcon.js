@@ -38,7 +38,7 @@ const mapStateToProps = createStructuredSelector({
   count: selectCartItemsCount,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   toggle: () => dispatch(toggleCart()),
 });
 

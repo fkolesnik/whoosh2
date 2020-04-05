@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import theme from "../styles/theme";
 import { Box, T1 } from "../styles/Styles";
 
-export default props => {
+export default (props) => {
   const { slug, title, price, family } = props.product;
   return (
     <Box

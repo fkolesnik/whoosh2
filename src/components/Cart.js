@@ -117,7 +117,7 @@ const Control = styled.button`
   flex-shrink: 0;
   color: #ccc;
   transition: all 0.2s;
-  opacity: ${props => (props.disabled ? 0 : 1)};
+  opacity: ${(props) => (props.disabled ? 0 : 1)};
   &:hover {
     color: black;
     border: 1px solid rgba(0, 0, 0, 0.1);

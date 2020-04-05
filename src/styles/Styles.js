@@ -53,7 +53,7 @@ export const T2 = styled.h2`
 `;
 
 export const Button = styled.button`
-  background-color: ${props => (props.error ? "red" : theme.color.primary)};
+  background-color: ${(props) => (props.error ? "red" : theme.color.primary)};
   color: white;
   padding: 0.64rem 1.5rem;
   border-radius: 50px;
@@ -66,7 +66,7 @@ export const Button = styled.button`
   outline: none;
   transition: filter 0.3s;
   :hover {
-    filter: ${props => (props.error ? "none" : "brightness(80%)")};
+    filter: ${(props) => (props.error ? "none" : "brightness(80%)")};
   }
   ${layout}
 `;
@@ -84,7 +84,7 @@ export const LabelCircle = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  animation: ${props =>
+  animation: ${(props) =>
     props.error ? "zzz 0.82s cubic-bezier(.36,.07,.19,.97)" : "none"};
   outline: none;
   transform: translate3d(0, 0, 0);
@@ -92,7 +92,7 @@ export const LabelCircle = styled.div`
   perspective: 1000px;
   transition: border 0.15s;
   will-change: border;
-  border: 3px solid ${props => (props.selected ? "white" : "transparent")};
+  border: 3px solid ${(props) => (props.selected ? "white" : "transparent")};
   @keyframes zzz {
     10%,
     90% {

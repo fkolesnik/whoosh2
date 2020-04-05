@@ -1,6 +1,6 @@
-import React, {Fragment, useState} from "react";
+import React, { Fragment, useState } from "react";
 import styled from "styled-components";
-import {Box, boxExtra, Button} from "../styles/Styles";
+import { Box, boxExtra, Button } from "../styles/Styles";
 import theme from "../styles/theme";
 import countries from "../data/countries";
 import Select from "react-select";
@@ -8,133 +8,140 @@ import validateInput from "../utils/validateInput";
 //import validateInput from "../utils/validateInput";
 
 const fields = [
-    {
-        name: "email",
-        placeholder: "Электронная почта",
-        type: "email",
-        width: 1,
-    },
-    {name: "name", placeholder: "Имя", type: "text", width: 1},
-    {
-        name: "city",
-        placeholder: "Город",
-        type: "text",
-        width: [7 / 10, 3 / 4],
-    },
-    {
-        name: "zip",
-        placeholder: "Индекс",
-        type: "text",
-        width: [3 / 10, 1 / 4],
-    },
-    {
-        name: "address",
-        placeholder: "Адрес",
-        type: "text",
-        width: 1,
-    },
-    {
-        name: "country",
-        placeholder: "Страна",
-        width: 1,
-        select: true,
-    },
+  {
+    name: "email",
+    placeholder: "Электронная почта",
+    type: "email",
+    width: 1,
+  },
+  { name: "name", placeholder: "Имя", type: "text", width: 1 },
+  {
+    name: "city",
+    placeholder: "Город",
+    type: "text",
+    width: [7 / 10, 3 / 4],
+  },
+  {
+    name: "zip",
+    placeholder: "Индекс",
+    type: "text",
+    width: [3 / 10, 1 / 4],
+  },
+  {
+    name: "address",
+    placeholder: "Адрес",
+    type: "text",
+    width: 1,
+  },
+  {
+    name: "country",
+    placeholder: "Страна",
+    width: 1,
+    select: true,
+  },
 ];
 
 const INITIAL_VALUES = {
-    email: "",
-    name: "",
-    address: "",
-    city: "",
-    zip: "",
-    country: "",
+  email: "",
+  name: "",
+  address: "",
+  city: "",
+  zip: "",
+  country: "",
 };
 
 const CartForm = () => {
-    const [values, setValues] = useState(INITIAL_VALUES);
-    const [error, setError] = useState('');
-    console.log('error in body', error);
+  const [values, setValues] = useState(INITIAL_VALUES);
+  const [error, setError] = useState("");
+  console.log("error in body:", error);
 
-    const onChange = e => {
-        e.persist();
-        setValues(prevValues => ({
-            ...prevValues,
-            [e.target.name]: e.target.value,
-        }));
-    };
+  const onChange = (e) => {
+    e.persist();
+    setValues((prevValues) => ({
+      ...prevValues,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
-    const onSelectChange = country => {
-        if (country) {
-            setValues(prevValues => ({
-                ...prevValues,
-                country: country.label,
-            }));
-        } else {
-            setValues(prevValues => ({
-                ...prevValues,
-                country: "",
-            }));
-        }
-    };
+  const onSelectChange = (country) => {
+    if (country) {
+      setValues((prevValues) => ({
+        ...prevValues,
+        country: country.label,
+      }));
+    } else {
+      setValues((prevValues) => ({
+        ...prevValues,
+        country: "",
+      }));
+    }
+  };
 
-    const onSubmit = (e) => {
-        e.preventDefault();
-        setError(validateInput(values));
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setError(validateInput(values));
 
-        if (error.length > 0) {
-            console.log('error in submit', error);
-        } else {
-            console.log('error in submit 2', error);
-        }
-    };
+    if (error.length > 0) {
+      console.log("error in submit", error);
+    } else {
+      console.log("error in submit 2", error);
+    }
+  };
 
-    return (
-        <form onSubmit={onSubmit}>
-            <Wrap>
-                {fields.map(field => (
-                    <Fragment key={field.name}>
-                        {field.select ? (
-                            <SelectWrap width={field.width}>
-                                <Select
-                                    classNamePrefix="country-container"
-                                    components={{
-                                        DropdownIndicator: () => null,
-                                        IndicatorSeparator: () => null,
-                                    }}
-                                    options={countries}
-                                    name={field.name}
-                                    placeholder={field.placeholder}
-                                    onChange={country => onSelectChange(country)}
-                                    menuPlacement="top"
-                                    noOptionsMessage={() => "Увы, в такую страну доставки нет"}
-                                    isClearable
-                                    className="country-container"
-                                />
-                            </SelectWrap>
-                        ) : (
-                            <Input
-                                name={field.name}
-                                width={field.width}
-                                placeholder={field.placeholder}
-                                type={field.type}
-                                value={values[field.name]}
-                                onChange={onChange}
-                                maxLength={100}
-                            />
-                        )}
-                    </Fragment>
-                ))}
-            </Wrap>
-            <Box height={30} fontSize="1" display="flex" justifyContent="center" alignItems="center" color="red">
-                {error}
-            </Box>
-            <Box>
-                <Button width={1} type="submit">
-                    Оплатить
-                </Button>
-            </Box>
-        </form>
-    );
+  return (
+    <form onSubmit={onSubmit}>
+      <Wrap>
+        {fields.map((field) => (
+          <Fragment key={field.name}>
+            {field.select ? (
+              <SelectWrap width={field.width}>
+                <Select
+                  classNamePrefix="country-container"
+                  components={{
+                    DropdownIndicator: () => null,
+                    IndicatorSeparator: () => null,
+                  }}
+                  options={countries}
+                  name={field.name}
+                  placeholder={field.placeholder}
+                  onChange={(country) => onSelectChange(country)}
+                  menuPlacement="top"
+                  noOptionsMessage={() => "Увы, в такую страну доставки нет"}
+                  isClearable
+                  className="country-container"
+                />
+              </SelectWrap>
+            ) : (
+              <Input
+                name={field.name}
+                width={field.width}
+                placeholder={field.placeholder}
+                type={field.type}
+                value={values[field.name]}
+                onChange={onChange}
+                maxLength={100}
+              />
+            )}
+          </Fragment>
+        ))}
+      </Wrap>
+      <Box
+        height={30}
+        fontSize="1"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        color="red"
+      >
+        {error}
+      </Box>
+      <Box>
+        <Button width={1} type="submit">
+          Оплатить
+        </Button>
+      </Box>
+    </form>
+  );
 };
 
 export default CartForm;
