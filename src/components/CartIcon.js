@@ -17,7 +17,7 @@ const CartIcon = ({ toggle, hidden, count }) => {
   return (
     <>
       <Wrap onClick={toggle}>
-        <img src={hidden ? cart : close} width={22} alt="" />
+        <img src={hidden ? cart : close} width={22} alt="Корзина" />
         {count > 0 && <Count>{count}</Count>}
       </Wrap>
       <Modal
