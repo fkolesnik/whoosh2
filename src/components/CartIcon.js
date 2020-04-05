@@ -6,7 +6,7 @@ import { createStructuredSelector } from "reselect";
 import theme from "../styles/theme";
 import {
   selectCartHidden,
-  selectCartItemsCount
+  selectCartItemsCount,
 } from "../redux/cart/cart.selectors";
 import Modal from "./Modal";
 import Cart from "./Cart";
@@ -35,11 +35,11 @@ const CartIcon = ({ toggle, hidden, count }) => {
 
 const mapStateToProps = createStructuredSelector({
   hidden: selectCartHidden,
-  count: selectCartItemsCount
+  count: selectCartItemsCount,
 });
 
 const mapDispatchToProps = dispatch => ({
-  toggle: () => dispatch(toggleCart())
+  toggle: () => dispatch(toggleCart()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartIcon);

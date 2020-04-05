@@ -2,7 +2,7 @@ import { productsTypes } from "./products.types";
 import { changeFamilyHead } from "./products.utils";
 
 const INITIAL_STATE = {
-  items: []
+  items: [],
 };
 
 const productsReducer = (state = INITIAL_STATE, action) => {
@@ -10,12 +10,12 @@ const productsReducer = (state = INITIAL_STATE, action) => {
     case productsTypes.LOAD_PRODUCTS:
       return {
         ...state,
-        items: action.payload
+        items: action.payload,
       };
     case productsTypes.CHANGE_FAMILY_HEAD:
       return {
         ...state,
-        items: changeFamilyHead(state.items, action.family, action.id)
+        items: changeFamilyHead(state.items, action.family, action.id),
       };
     default:
       return state;

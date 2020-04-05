@@ -44,7 +44,7 @@ const LoadProducts = ({ loadProducts }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  loadProducts: products => dispatch(loadProducts(products))
+  loadProducts: products => dispatch(loadProducts(products)),
 });
 
 export default connect(null, mapDispatchToProps)(LoadProducts);

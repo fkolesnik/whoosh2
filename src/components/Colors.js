@@ -30,7 +30,7 @@ const Colors = ({ products, family, hover, dispatch }) => (
 );
 
 const mapStateToProps = createStructuredSelector({
-  products: selectLoadProducts
+  products: selectLoadProducts,
 });
 
 export default connect(mapStateToProps)(Colors);

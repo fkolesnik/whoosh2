@@ -43,15 +43,15 @@ small {font-size: 80%;}
   transition: transform .4s ease-in-out;
 }
 
-.ReactModal__Content--after-open{
+.ReactModal__Content--after-open {
     transform: translate3d(0, 0, 0);
 } 
 
-.ReactModal__Overlay--after-open{
+.ReactModal__Overlay--after-open {
     opacity: 1;
 }
 
-.ReactModal__Overlay--before-close{
+.ReactModal__Overlay--before-close {
     opacity: 0;
 }
 

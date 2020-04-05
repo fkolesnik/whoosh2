@@ -1,7 +1,7 @@
 const theme = {
   color: {
     primary: "#0d5df2",
-    light: "#f7f7f7"
+    light: "#f7f7f7",
   },
   breakpoints: ["769px", "1600px"],
   space: [0, ".25rem", "0.5rem", "1rem", "2rem", "3rem", "5rem"],
@@ -9,13 +9,13 @@ const theme = {
   fontFamily: {
     base:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Helvetica Neue", sans-serif',
-    title: "Rubik, sans-serif;"
+    title: "Rubik, sans-serif;",
   },
   lineHeight: {
     base: 1.5,
-    title: 1.2
+    title: 1.2,
   },
-  shadow: `0 1px 2px rgba(0, 0, 0, 0.25)`
+  shadow: `0 1px 2px rgba(0, 0, 0, 0.25)`,
 };
 
 // spaces aliases

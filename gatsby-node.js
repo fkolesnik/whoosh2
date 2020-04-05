@@ -28,8 +28,8 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.slug,
       component: path.resolve(`./src/templates/product.js`),
       context: {
-        id: node.id
-      }
+        id: node.id,
+      },
     });
   });
 };

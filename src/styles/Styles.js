@@ -8,7 +8,7 @@ import {
   position,
   shadow,
   space,
-  typography
+  typography,
 } from "styled-system";
 import theme from "./theme";
 
@@ -23,7 +23,7 @@ export const boxExtra = [
   background,
   border,
   position,
-  shadow
+  shadow,
 ];
 
 export const Box = styled.div`

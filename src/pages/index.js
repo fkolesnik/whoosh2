@@ -14,7 +14,7 @@ export const Homepage = ({ products }) => (
 );
 
 const mapStateToProps = createStructuredSelector({
-  products: selectLoadProductsForHomepage
+  products: selectLoadProductsForHomepage,
 });
 
 export default connect(mapStateToProps)(Homepage);

@@ -9,7 +9,7 @@ const Modal = ({
   children,
   title,
   overlayClose,
-  bg
+  bg,
 }) => {
   React.useEffect(() => {
     ReactModal.setAppElement("body");
@@ -18,7 +18,7 @@ const Modal = ({
   const overlayStyles = {
     zIndex: 100,
     backgroundColor: "rgba(0, 0, 0, .9)",
-    overflowY: "auto"
+    overflowY: "auto",
   };
 
   const contentStyles = {
@@ -34,7 +34,7 @@ const Modal = ({
     borderRadius: 8,
     backgroundColor: bg ? bg : "white",
     paddingLeft: "2vw",
-    paddingRight: "2vw"
+    paddingRight: "2vw",
   };
 
   return (

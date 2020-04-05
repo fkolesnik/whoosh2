@@ -77,7 +77,7 @@ const ProductPage = ({ data, addItem, toggleCart }) => {
 
 const mapDispatchToProps = dispatch => ({
   addItem: item => dispatch(addItem(item)),
-  toggleCart: () => dispatch(toggleCart())
+  toggleCart: () => dispatch(toggleCart()),
 });
 
 export default connect(null, mapDispatchToProps)(ProductPage);

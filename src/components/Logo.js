@@ -18,7 +18,7 @@ const Logo = ({ hidden }) => {
 };
 
 const mapStateToProps = createStructuredSelector({
-  hidden: selectCartHidden
+  hidden: selectCartHidden,
 });
 
 export default connect(mapStateToProps)(Logo);

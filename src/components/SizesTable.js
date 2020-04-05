@@ -25,7 +25,7 @@ const SizesTable = ({ hidden }) => {
 };
 
 const mapStateToProps = createStructuredSelector({
-  hidden: selectCartHidden
+  hidden: selectCartHidden,
 });
 
 export default connect(mapStateToProps)(SizesTable);
