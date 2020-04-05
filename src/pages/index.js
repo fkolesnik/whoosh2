@@ -1,7 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 import { connect } from "react-redux";
-import {loadProducts} from "../redux/products/products.actions";
+import { loadProducts } from "../redux/products/products.actions";
 import { createStructuredSelector } from "reselect";
 import { selectLoadProductsForHomepage } from "../redux/products/products.selectors";
 import Layout from "../components/Layout";
@@ -12,15 +12,15 @@ export const Homepage = ({ data, products, dispatch }) => {
 
   useEffect(() => {
     dispatch(loadProducts(sourcedProducts));
-  }, [dispatch, sourcedProducts])
+  }, [dispatch, sourcedProducts]);
 
   return (
-      <Layout>
-        {products.map(({ node }) => (
-            <ProductItem key={node.id} product={node} />
-        ))}
-      </Layout>
-  )
+    <Layout>
+      {products.map(({ node }) => (
+        <ProductItem key={node.id} product={node} />
+      ))}
+    </Layout>
+  );
 };
 
 const mapStateToProps = createStructuredSelector({
